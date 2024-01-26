@@ -42,6 +42,8 @@ From the command line:
 npm install aspose.slides.via.java
 ```
 
+Please use the following [article](https://docs.aspose.com/slides/nodejs-java/troubleshooting-installation/) if you encounter compilation errors during installation of Aspose.Slides for Node.js via Java.
+
 ### Convert Presentation to Multiple Formats using Node.js
 
 ```javascript
