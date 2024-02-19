@@ -1,6 +1,6 @@
 {
   "name": "aspose.slides.via.java",
-  "version": "24.1.0",
+  "version": "24.2.0",
   "description": "A powerful library for manipulating and converting PowerPoint (PPT, PPTX, PPS, POT, PPSX, PPTM, PPSM, POTX, POTM), ODP, ODS, CSV, TXT, PNG, EMF, JPG, JSON and HTML files.",
   "main": "index.js",
   "scripts": {
