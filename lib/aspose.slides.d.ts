@@ -8962,7 +8962,7 @@ declare module "aspose.slides.via.java" {
         /**
          * Creates a new instance of XmlSchemaException.
          */
-        constructor(arg1: string, arg2: string[], arg3: java.lang.RuntimeException, arg4: string, arg5: number, arg6: number, arg7: r8);
+        constructor(arg1: string, arg2: string[], arg3: java.lang.RuntimeException, arg4: string, arg5: number, arg6: number, arg7: j1);
 
         /**
          * @param arg1 string
@@ -8984,12 +8984,12 @@ declare module "aspose.slides.via.java" {
         /**
          * Creates a new instance of XmlSchemaException.
          */
-        constructor(arg1: string, arg2: string[], arg3: r8);
+        constructor(arg1: string, arg2: string[], arg3: j1);
 
         /**
          * Creates a new instance of XmlSchemaException.
          */
-        constructor(arg1: string, arg2: r8);
+        constructor(arg1: string, arg2: j1);
 
         /**
          * @param arg1 string
@@ -9002,7 +9002,7 @@ declare module "aspose.slides.via.java" {
         /**
          * Creates a new instance of XmlSchemaException.
          */
-        constructor(arg1: string, arg2: string, arg3: r8);
+        constructor(arg1: string, arg2: string, arg3: j1);
 
         /**
          * @returns string
@@ -18528,159 +18528,14 @@ declare module "aspose.slides.via.java" {
         getTraces(): IInkTrace[];
 
         /**
-         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setHeight(arg1: number): void;
-
-        /**
-         * Determines whether the shape is hidden. Read/write boolean.
-         */
-        setHidden(arg1: boolean): void;
-
-        /**
-         * Gets or sets 'Mark as decorative' option Reed/write boolean.
-         */
-        isDecorative(): boolean;
-
-        /**
-         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getHeight(): number;
-
-        /**
-         * Returns the shape's custom data. Read-only ICustomData.
-         */
-        getCustomData(): ICustomData;
-
-        /**
-         * Returns a slide-scoped unique identifier that remains constant for the lifetime of the shape and lets PowerPoint or interop code reliably reference the shape from anywhere in the document. Read-only long. See also getUniqueId().
-         */
-        getOfficeInteropShapeId(): number;
-
-        /**
-         * Gets or sets 'Mark as decorative' option Reed/write boolean.
-         */
-        setDecorative(arg1: boolean): void;
-
-        /**
-         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
-         */
-        setRawFrame(arg1: IShapeFrame): void;
-
-        /**
-         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getWidth(): number;
-
-        /**
-         * Returns the FillFormat object that contains fill formatting properties for a shape. Read-only IFillFormat.
-         */
-        getFillFormat(): IFillFormat;
-
-        /**
          * Returns or sets the alternative text associated with a shape. Read/write String.
          */
-        getAlternativeText(): string;
+        setAlternativeText(arg1: string): void;
 
         /**
-         * Returns or sets the name of a shape. Read/write String.
+         * Returns the number of connection sites on the shape. Read-only int.
          */
-        setName(arg1: string): void;
-
-        /**
-         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getY(): number;
-
-        /**
-         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
-         */
-        getRotation(): number;
-
-        /**
-         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setY(arg1: number): void;
-
-        /**
-         * Returns shape thumbnail.
-         */
-        getImage(arg1: number, arg2: number, arg3: number): IImage;
-
-        /**
-         * Defines that this shape isn't a placeholder.
-         */
-        removePlaceholder(): void;
-
-        /**
-         * Returns the EffectFormat object which contains pixel effects applied to a shape. Read-only IEffectFormat.
-         */
-        getEffectFormat(): IEffectFormat;
-
-        /**
-         * Returns the placeholder for a shape. Read-only IPlaceholder.
-         */
-        getPlaceholder(): IPlaceholder;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
-         */
-        setHyperlinkMouseOver(arg1: IHyperlink): void;
-
-        /**
-         * Determines whether the shape is TextHolder. Read-only boolean.
-         */
-        isTextHolder(): boolean;
-
-        /**
-         * Returns the base slide. Read-only IBaseSlide.
-         */
-        getSlide(): IBaseSlide;
-
-        /**
-         * Returns a basic placeholder shape (shape from the layout and/or master slide that the current shape is inherited from). A null is returned if the current shape is not inherited.
-         */
-        getBasePlaceholder(): IShape;
-
-        /**
-         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setWidth(arg1: number): void;
-
-        /**
-         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
-         */
-        getBlackWhiteMode(): number;
-
-        /**
-         * Returns the presentation. Read-only IPresentation.
-         */
-        getPresentation(): IPresentation;
-
-        /**
-         * Adds a new placeholder if there is no and sets placeholder properties to a specified one.
-         */
-        addPlaceholder(arg1: IPlaceholder): IPlaceholder;
-
-        /**
-         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
-         */
-        getRawFrame(): IShapeFrame;
-
-        /**
-         * Hyperlinks manager Read-only IHyperlinkManager.
-         */
-        getHyperlinkManager(): IHyperlinkManager;
-
-        /**
-         * Returns or sets the name of a shape. Read/write String.
-         */
-        getName(): string;
-
-        /**
-         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setX(arg1: number): void;
+        getConnectionSiteCount(): number;
 
         /**
          * Returns shape's locks. Read-only IBaseShapeLock.
@@ -18688,9 +18543,199 @@ declare module "aspose.slides.via.java" {
         getShapeLock(): IBaseShapeLock;
 
         /**
+         * Returns or sets the alternative text associated with a shape. Read/write String.
+         */
+        getAlternativeText(): string;
+
+        /**
+         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
+         */
+        setRawFrame(arg1: IShapeFrame): void;
+
+        /**
+         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
+         */
+        getBlackWhiteMode(): number;
+
+        /**
          * Returns an internal, presentation-scoped identifier intended for use by add-ins or other code. Because this value can be reassigned by the user or programmatically, it must not be treated as a persistent unique key. Read-only long. See also getOfficeInteropShapeId().
          */
         getUniqueId(): number;
+
+        /**
+         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         */
+        setFrame(arg1: IShapeFrame): void;
+
+        /**
+         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getHeight(): number;
+
+        /**
+         * Returns shape thumbnail.
+         */
+        getImage(arg1: number, arg2: number, arg3: number): IImage;
+
+        /**
+         * Returns or sets the title of alternative text associated with a shape. Read/write String.
+         */
+        getAlternativeTextTitle(): string;
+
+        /**
+         * Gets or sets 'Mark as decorative' option Reed/write boolean.
+         */
+        setDecorative(arg1: boolean): void;
+
+        /**
+         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getWidth(): number;
+
+        /**
+         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getX(): number;
+
+        /**
+         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setWidth(arg1: number): void;
+
+        /**
+         * Determines whether the shape is hidden. Read/write boolean.
+         */
+        setHidden(arg1: boolean): void;
+
+        /**
+         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
+         */
+        getRawFrame(): IShapeFrame;
+
+        /**
+         * Returns shape thumbnail.
+         */
+        getImage(): IImage;
+
+        /**
+         * Defines that this shape isn't a placeholder.
+         */
+        removePlaceholder(): void;
+
+        /**
+         * Returns the base slide. Read-only IBaseSlide.
+         */
+        getSlide(): IBaseSlide;
+
+        /**
+         * Adds a new placeholder if there is no and sets placeholder properties to a specified one.
+         */
+        addPlaceholder(arg1: IPlaceholder): IPlaceholder;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
+         */
+        setHyperlinkClick(arg1: IHyperlink): void;
+
+        /**
+         * Returns shape's locks. Read-only IGraphicalObjectLock.
+         */
+        getGraphicalObjectLock(): IGraphicalObjectLock;
+
+        /**
+         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setHeight(arg1: number): void;
+
+        /**
+         * Returns parent GroupShape object if shape is grouped. Otherwise returns null. Read-only IGroupShape. Property isGrouped() determines whether the shape is grouped.
+         */
+        getParentGroup(): IGroupShape;
+
+        /**
+         * Returns the shape's custom data. Read-only ICustomData.
+         */
+        getCustomData(): ICustomData;
+
+        /**
+         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         */
+        getFrame(): IShapeFrame;
+
+        /**
+         * Returns the presentation. Read-only IPresentation.
+         */
+        getPresentation(): IPresentation;
+
+        /**
+         * Gets or sets 'Mark as decorative' option Reed/write boolean.
+         */
+        isDecorative(): boolean;
+
+        /**
+         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setY(arg1: number): void;
+
+        /**
+         * Returns a slide-scoped unique identifier that remains constant for the lifetime of the shape and lets PowerPoint or interop code reliably reference the shape from anywhere in the document. Read-only long. See also getUniqueId().
+         */
+        getOfficeInteropShapeId(): number;
+
+        /**
+         * Determines whether the shape is grouped. Read-only boolean. Property getParentGroup() returns parent GroupShape object if shape is grouped.
+         */
+        isGrouped(): boolean;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
+         */
+        getHyperlinkClick(): IHyperlink;
+
+        /**
+         * Returns or sets the name of a shape. Read/write String.
+         */
+        setName(arg1: string): void;
+
+        /**
+         * Returns the position of a shape in the z-order. Shapes[0] returns the shape at the back of the z-order, and Shapes[Shapes.Count - 1] returns the shape at the front of the z-order. Read-only int.
+         */
+        getZOrderPosition(): number;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         */
+        getHyperlinkMouseOver(): IHyperlink;
+
+        /**
+         * Returns the LineFormat object that contains line formatting properties for a shape. Read-only ILineFormat.
+         */
+        getLineFormat(): ILineFormat;
+
+        /**
+         * Determines whether the shape is hidden. Read/write boolean.
+         */
+        getHidden(): boolean;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         */
+        setHyperlinkMouseOver(arg1: IHyperlink): void;
+
+        /**
+         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
+         */
+        setBlackWhiteMode(arg1: number): void;
+
+        /**
+         * Determines whether the shape is TextHolder. Read-only boolean.
+         */
+        isTextHolder(): boolean;
+
+        /**
+         * Returns the ThreeDFormat object that contains line formatting properties for a shape. Read-only IThreeDFormat.
+         */
+        getThreeDFormat(): IThreeDFormat;
 
         /**
          * Saves content of Shape as SVG file.
@@ -18703,69 +18748,19 @@ declare module "aspose.slides.via.java" {
         setAlternativeTextTitle(arg1: string): void;
 
         /**
-         * Determines whether the shape is hidden. Read/write boolean.
+         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
          */
-        getHidden(): boolean;
+        setX(arg1: number): void;
 
         /**
-         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
+         * Hyperlinks manager Read-only IHyperlinkManager.
          */
-        getHyperlinkClick(): IHyperlink;
+        getHyperlinkManager(): IHyperlinkManager;
 
         /**
-         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         * Returns the placeholder for a shape. Read-only IPlaceholder.
          */
-        getFrame(): IShapeFrame;
-
-        /**
-         * Returns shape thumbnail.
-         */
-        getImage(): IImage;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
-         */
-        setHyperlinkClick(arg1: IHyperlink): void;
-
-        /**
-         * Determines whether the shape is grouped. Read-only boolean. Property getParentGroup() returns parent GroupShape object if shape is grouped.
-         */
-        isGrouped(): boolean;
-
-        /**
-         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
-         */
-        setFrame(arg1: IShapeFrame): void;
-
-        /**
-         * Returns parent GroupShape object if shape is grouped. Otherwise returns null. Read-only IGroupShape. Property isGrouped() determines whether the shape is grouped.
-         */
-        getParentGroup(): IGroupShape;
-
-        /**
-         * Returns or sets the alternative text associated with a shape. Read/write String.
-         */
-        setAlternativeText(arg1: string): void;
-
-        /**
-         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
-         */
-        setRotation(arg1: number): void;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
-         */
-        getHyperlinkMouseOver(): IHyperlink;
-
-        /**
-         * Returns shape's locks. Read-only IGraphicalObjectLock.
-         */
-        getGraphicalObjectLock(): IGraphicalObjectLock;
-
-        /**
-         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
-         */
-        setBlackWhiteMode(arg1: number): void;
+        getPlaceholder(): IPlaceholder;
 
         /**
          * Saves content of Shape as SVG file.
@@ -18773,34 +18768,39 @@ declare module "aspose.slides.via.java" {
         writeAsSvg(arg1: java.io.OutputStream): void;
 
         /**
-         * Returns the LineFormat object that contains line formatting properties for a shape. Read-only ILineFormat.
+         * Returns a basic placeholder shape (shape from the layout and/or master slide that the current shape is inherited from). A null is returned if the current shape is not inherited.
          */
-        getLineFormat(): ILineFormat;
+        getBasePlaceholder(): IShape;
 
         /**
-         * Returns the number of connection sites on the shape. Read-only int.
+         * Returns the EffectFormat object which contains pixel effects applied to a shape. Read-only IEffectFormat.
          */
-        getConnectionSiteCount(): number;
+        getEffectFormat(): IEffectFormat;
 
         /**
-         * Returns the ThreeDFormat object that contains line formatting properties for a shape. Read-only IThreeDFormat.
+         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
          */
-        getThreeDFormat(): IThreeDFormat;
+        setRotation(arg1: number): void;
 
         /**
-         * Returns the position of a shape in the z-order. Shapes[0] returns the shape at the back of the z-order, and Shapes[Shapes.Count - 1] returns the shape at the front of the z-order. Read-only int.
+         * Returns the FillFormat object that contains fill formatting properties for a shape. Read-only IFillFormat.
          */
-        getZOrderPosition(): number;
+        getFillFormat(): IFillFormat;
 
         /**
-         * Returns or sets the title of alternative text associated with a shape. Read/write String.
+         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
          */
-        getAlternativeTextTitle(): string;
+        getRotation(): number;
 
         /**
-         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         * Returns or sets the name of a shape. Read/write String.
          */
-        getX(): number;
+        getName(): string;
+
+        /**
+         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getY(): number;
 
     }
 
@@ -18857,14 +18857,14 @@ declare module "aspose.slides.via.java" {
         getMessage(): string;
 
         /**
-         * Creates a new instance of ArgumentException.
-         */
-        constructor(arg1: string, arg2: string, arg3: java.lang.Throwable);
-
-        /**
          * @returns string
          */
         getParamName(): string;
+
+        /**
+         * Creates a new instance of ArgumentException.
+         */
+        constructor(arg1: string, arg2: string, arg3: java.lang.Throwable);
 
     }
 
@@ -18904,9 +18904,9 @@ declare module "aspose.slides.via.java" {
         getColor(): IColorFormat;
 
         /**
-         * Compares with specified object.
+         * Returns parent IPresentationComponent. Read-only IPresentationComponent.
          */
-        equals(arg1: java.lang.Object): boolean;
+        getParent_IPresentationComponent(): IPresentationComponent;
 
         /**
          * Description copied from interface: ISlideComponent
@@ -18914,24 +18914,9 @@ declare module "aspose.slides.via.java" {
         getSlide(): IBaseSlide;
 
         /**
-         * Description copied from interface: ISlideComponent
+         * Compares with specified object.
          */
-        getSlide(): BaseSlide;
-
-        /**
-         * Description copied from interface: IPresentationComponent
-         */
-        getPresentation(): IPresentation;
-
-        /**
-         * @returns ISlideComponent
-         */
-        getParent_ISlideComponent(): ISlideComponent;
-
-        /**
-         * Returns hash code.
-         */
-        hashCode(): number;
+        equals(arg1: java.lang.Object): boolean;
 
         /**
          * Description copied from interface: IPresentationComponent
@@ -18939,9 +18924,24 @@ declare module "aspose.slides.via.java" {
         getPresentation(): Presentation;
 
         /**
-         * Returns parent IPresentationComponent. Read-only IPresentationComponent.
+         * Description copied from interface: IPresentationComponent
          */
-        getParent_IPresentationComponent(): IPresentationComponent;
+        getPresentation(): IPresentation;
+
+        /**
+         * Returns hash code.
+         */
+        hashCode(): number;
+
+        /**
+         * Description copied from interface: ISlideComponent
+         */
+        getSlide(): BaseSlide;
+
+        /**
+         * @returns ISlideComponent
+         */
+        getParent_ISlideComponent(): ISlideComponent;
 
     }
 
@@ -19055,19 +19055,24 @@ declare module "aspose.slides.via.java" {
         getRelatedLegendEntry(): ILegendEntryProperties;
 
         /**
-         * Returns the chart. Read-only IChart.
-         */
-        getChart(): IChart;
-
-        /**
          * Returns the presentation. Read-only IPresentation.
          */
         getPresentation(): IPresentation;
 
         /**
+         * Can contain a rich formatted text. If this property is not null then this formatted text value overrides auto-generated text. Auto-generated text is an implicit property of the data label, the display unit label of the value axis, the axis title, the chart title, the label of the trendline. Auto-generated text is formatted with the IFormattedTextContainer.TextFormat property. Read-only ITextFrame.
+         */
+        getTextFrameForOverriding(): ITextFrame;
+
+        /**
          * Returns the base slide. Read-only IBaseSlide.
          */
         getSlide(): IBaseSlide;
+
+        /**
+         * Returns the chart. Read-only IChart.
+         */
+        getChart(): IChart;
 
         /**
          * Returns chart text format. Read-only IChartTextFormat.
@@ -19078,11 +19083,6 @@ declare module "aspose.slides.via.java" {
          * Initialize TextFrameForOverriding with the text in paramener "text". If TextFrameForOverriding is already initialized then simply changes its text.
          */
         addTextFrameForOverriding(arg1: string): ITextFrame;
-
-        /**
-         * Can contain a rich formatted text. If this property is not null then this formatted text value overrides auto-generated text. Auto-generated text is an implicit property of the data label, the display unit label of the value axis, the axis title, the chart title, the label of the trendline. Auto-generated text is formatted with the IFormattedTextContainer.TextFormat property. Read-only ITextFrame.
-         */
-        getTextFrameForOverriding(): ITextFrame;
 
     }
 
@@ -19116,14 +19116,14 @@ declare module "aspose.slides.via.java" {
         getImageTransform(): IImageTransformOperationCollection;
 
         /**
-         * Returns the base slide. Read-only IBaseSlide.
-         */
-        getSlide(): IBaseSlide;
-
-        /**
          * Returns the presentation. Read-only IPresentation.
          */
         getPresentation(): IPresentation;
+
+        /**
+         * Returns the base slide. Read-only IBaseSlide.
+         */
+        getSlide(): IBaseSlide;
 
     }
 
@@ -19364,9 +19364,14 @@ declare module "aspose.slides.via.java" {
         iterator(): java.util.Iterator;
 
         /**
-         * Compares with specified object.
+         * Description copied from interface: ISlideComponent
          */
-        equals(arg1: java.lang.Object): boolean;
+        getSlide(): IBaseSlide;
+
+        /**
+         * Description copied from interface: IPresentationComponent
+         */
+        getPresentation(): IPresentation;
 
         /**
          * Returns hash code.
@@ -19374,14 +19379,9 @@ declare module "aspose.slides.via.java" {
         hashCode(): number;
 
         /**
-         * Description copied from interface: IPresentationComponent
+         * Compares with specified object.
          */
-        getPresentation(): Presentation;
-
-        /**
-         * Description copied from interface: ISlideComponent
-         */
-        getSlide(): IBaseSlide;
+        equals(arg1: java.lang.Object): boolean;
 
         /**
          * Description copied from interface: ISlideComponent
@@ -19389,14 +19389,14 @@ declare module "aspose.slides.via.java" {
         getSlide(): BaseSlide;
 
         /**
+         * Description copied from interface: IPresentationComponent
+         */
+        getPresentation(): Presentation;
+
+        /**
          * Returns parent IPresentationComponent. Read-only IPresentationComponent.
          */
         getParent_IPresentationComponent(): IPresentationComponent;
-
-        /**
-         * Description copied from interface: IPresentationComponent
-         */
-        getPresentation(): IPresentation;
 
         /**
          * @returns ISlideComponent
@@ -19908,24 +19908,9 @@ declare module "aspose.slides.via.java" {
         getGraphicalObjectLock(): IGraphicalObjectLock;
 
         /**
-         * Returns the LineFormat object that contains line formatting properties for a shape. Read-only ILineFormat.
+         * Returns the EffectFormat object which contains pixel effects applied to a shape. Read-only IEffectFormat.
          */
-        getLineFormat(): ILineFormat;
-
-        /**
-         * Returns the ThreeDFormat object that contains line formatting properties for a shape. Read-only IThreeDFormat.
-         */
-        getThreeDFormat(): IThreeDFormat;
-
-        /**
-         * Determines whether the shape is hidden. Read/write boolean.
-         */
-        getHidden(): boolean;
-
-        /**
-         * Returns the placeholder for a shape. Read-only IPlaceholder.
-         */
-        getPlaceholder(): IPlaceholder;
+        getEffectFormat(): IEffectFormat;
 
         /**
          * Returns the FillFormat object that contains fill formatting properties for a shape. Read-only IFillFormat.
@@ -19933,34 +19918,9 @@ declare module "aspose.slides.via.java" {
         getFillFormat(): IFillFormat;
 
         /**
-         * Determines whether the shape is hidden. Read/write boolean.
+         * Returns the position of a shape in the z-order. Shapes[0] returns the shape at the back of the z-order, and Shapes[Shapes.Count - 1] returns the shape at the front of the z-order. Read-only int.
          */
-        setHidden(arg1: boolean): void;
-
-        /**
-         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
-         */
-        setFrame(arg1: IShapeFrame): void;
-
-        /**
-         * Returns a basic placeholder shape (shape from the layout and/or master slide that the current shape is inherited from). A null is returned if the current shape is not inherited.
-         */
-        getBasePlaceholder(): IShape;
-
-        /**
-         * Adds a new placeholder if there is no and sets placeholder properties to a specified one.
-         */
-        addPlaceholder(arg1: IPlaceholder): IPlaceholder;
-
-        /**
-         * Returns or sets the title of alternative text associated with a shape. Read/write String.
-         */
-        getAlternativeTextTitle(): string;
-
-        /**
-         * Returns an internal, presentation-scoped identifier intended for use by add-ins or other code. Because this value can be reassigned by the user or programmatically, it must not be treated as a persistent unique key. Read-only long. See also getOfficeInteropShapeId().
-         */
-        getUniqueId(): number;
+        getZOrderPosition(): number;
 
         /**
          * Defines that this shape isn't a placeholder.
@@ -19968,154 +19928,9 @@ declare module "aspose.slides.via.java" {
         removePlaceholder(): void;
 
         /**
-         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
-         */
-        setRawFrame(arg1: IShapeFrame): void;
-
-        /**
-         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
-         */
-        getFrame(): IShapeFrame;
-
-        /**
-         * Determines whether the shape is grouped. Read-only boolean. Property getParentGroup() returns parent GroupShape object if shape is grouped.
-         */
-        isGrouped(): boolean;
-
-        /**
-         * Returns parent GroupShape object if shape is grouped. Otherwise returns null. Read-only IGroupShape. Property isGrouped() determines whether the shape is grouped.
-         */
-        getParentGroup(): IGroupShape;
-
-        /**
-         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
-         */
-        getRotation(): number;
-
-        /**
-         * Returns a slide-scoped unique identifier that remains constant for the lifetime of the shape and lets PowerPoint or interop code reliably reference the shape from anywhere in the document. Read-only long. See also getUniqueId().
-         */
-        getOfficeInteropShapeId(): number;
-
-        /**
-         * Returns or sets the title of alternative text associated with a shape. Read/write String.
-         */
-        setAlternativeTextTitle(arg1: string): void;
-
-        /**
-         * Returns or sets the name of a shape. Read/write String.
-         */
-        getName(): string;
-
-        /**
-         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setWidth(arg1: number): void;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
-         */
-        getHyperlinkMouseOver(): IHyperlink;
-
-        /**
-         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
-         */
-        getBlackWhiteMode(): number;
-
-        /**
-         * Returns the presentation. Read-only IPresentation.
-         */
-        getPresentation(): IPresentation;
-
-        /**
-         * Determines whether the shape is TextHolder. Read-only boolean.
-         */
-        isTextHolder(): boolean;
-
-        /**
-         * Returns the base slide. Read-only IBaseSlide.
-         */
-        getSlide(): IBaseSlide;
-
-        /**
-         * Saves content of Shape as SVG file.
-         */
-        writeAsSvg(arg1: java.io.OutputStream): void;
-
-        /**
          * Returns shape thumbnail.
          */
-        getImage(): IImage;
-
-        /**
-         * Returns or sets the alternative text associated with a shape. Read/write String.
-         */
-        setAlternativeText(arg1: string): void;
-
-        /**
-         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getWidth(): number;
-
-        /**
-         * Gets or sets 'Mark as decorative' option Reed/write boolean.
-         */
-        isDecorative(): boolean;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
-         */
-        setHyperlinkClick(arg1: IHyperlink): void;
-
-        /**
-         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setX(arg1: number): void;
-
-        /**
-         * Returns or sets the alternative text associated with a shape. Read/write String.
-         */
-        getAlternativeText(): string;
-
-        /**
-         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
-         */
-        setBlackWhiteMode(arg1: number): void;
-
-        /**
-         * Returns the position of a shape in the z-order. Shapes[0] returns the shape at the back of the z-order, and Shapes[Shapes.Count - 1] returns the shape at the front of the z-order. Read-only int.
-         */
-        getZOrderPosition(): number;
-
-        /**
-         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getX(): number;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
-         */
-        getHyperlinkClick(): IHyperlink;
-
-        /**
-         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getY(): number;
-
-        /**
-         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
-         */
-        getRawFrame(): IShapeFrame;
-
-        /**
-         * Returns the EffectFormat object which contains pixel effects applied to a shape. Read-only IEffectFormat.
-         */
-        getEffectFormat(): IEffectFormat;
-
-        /**
-         * Hyperlinks manager Read-only IHyperlinkManager.
-         */
-        getHyperlinkManager(): IHyperlinkManager;
+        getImage(arg1: number, arg2: number, arg3: number): IImage;
 
         /**
          * Returns the number of connection sites on the shape. Read-only int.
@@ -20123,9 +19938,179 @@ declare module "aspose.slides.via.java" {
         getConnectionSiteCount(): number;
 
         /**
+         * Returns the ThreeDFormat object that contains line formatting properties for a shape. Read-only IThreeDFormat.
+         */
+        getThreeDFormat(): IThreeDFormat;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
+         */
+        setHyperlinkClick(arg1: IHyperlink): void;
+
+        /**
+         * Returns the shape's custom data. Read-only ICustomData.
+         */
+        getCustomData(): ICustomData;
+
+        /**
+         * Returns or sets the name of a shape. Read/write String.
+         */
+        getName(): string;
+
+        /**
+         * Determines whether the shape is grouped. Read-only boolean. Property getParentGroup() returns parent GroupShape object if shape is grouped.
+         */
+        isGrouped(): boolean;
+
+        /**
+         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
+         */
+        getRawFrame(): IShapeFrame;
+
+        /**
+         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         */
+        setFrame(arg1: IShapeFrame): void;
+
+        /**
+         * Returns the LineFormat object that contains line formatting properties for a shape. Read-only ILineFormat.
+         */
+        getLineFormat(): ILineFormat;
+
+        /**
+         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
+         */
+        setBlackWhiteMode(arg1: number): void;
+
+        /**
+         * Saves content of Shape as SVG file.
+         */
+        writeAsSvg(arg1: java.io.OutputStream, arg2: ISVGOptions): void;
+
+        /**
+         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getX(): number;
+
+        /**
+         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
+         */
+        getBlackWhiteMode(): number;
+
+        /**
          * Returns or sets the name of a shape. Read/write String.
          */
         setName(arg1: string): void;
+
+        /**
+         * Gets or sets 'Mark as decorative' option Reed/write boolean.
+         */
+        isDecorative(): boolean;
+
+        /**
+         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setHeight(arg1: number): void;
+
+        /**
+         * Hyperlinks manager Read-only IHyperlinkManager.
+         */
+        getHyperlinkManager(): IHyperlinkManager;
+
+        /**
+         * Returns parent GroupShape object if shape is grouped. Otherwise returns null. Read-only IGroupShape. Property isGrouped() determines whether the shape is grouped.
+         */
+        getParentGroup(): IGroupShape;
+
+        /**
+         * Adds a new placeholder if there is no and sets placeholder properties to a specified one.
+         */
+        addPlaceholder(arg1: IPlaceholder): IPlaceholder;
+
+        /**
+         * Determines whether the shape is TextHolder. Read-only boolean.
+         */
+        isTextHolder(): boolean;
+
+        /**
+         * Returns a basic placeholder shape (shape from the layout and/or master slide that the current shape is inherited from). A null is returned if the current shape is not inherited.
+         */
+        getBasePlaceholder(): IShape;
+
+        /**
+         * Determines whether the shape is hidden. Read/write boolean.
+         */
+        getHidden(): boolean;
+
+        /**
+         * Returns or sets the title of alternative text associated with a shape. Read/write String.
+         */
+        setAlternativeTextTitle(arg1: string): void;
+
+        /**
+         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getHeight(): number;
+
+        /**
+         * Returns shape's locks. Read-only IBaseShapeLock.
+         */
+        getShapeLock(): IBaseShapeLock;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         */
+        setHyperlinkMouseOver(arg1: IHyperlink): void;
+
+        /**
+         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setY(arg1: number): void;
+
+        /**
+         * Returns or sets the title of alternative text associated with a shape. Read/write String.
+         */
+        getAlternativeTextTitle(): string;
+
+        /**
+         * Saves content of Shape as SVG file.
+         */
+        writeAsSvg(arg1: java.io.OutputStream): void;
+
+        /**
+         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
+         */
+        getRotation(): number;
+
+        /**
+         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getY(): number;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         */
+        getHyperlinkMouseOver(): IHyperlink;
+
+        /**
+         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getWidth(): number;
+
+        /**
+         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         */
+        getFrame(): IShapeFrame;
+
+        /**
+         * Returns shape thumbnail.
+         */
+        getImage(): IImage;
+
+        /**
+         * Returns the presentation. Read-only IPresentation.
+         */
+        getPresentation(): IPresentation;
 
         /**
          * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
@@ -20138,44 +20123,59 @@ declare module "aspose.slides.via.java" {
         setDecorative(arg1: boolean): void;
 
         /**
-         * Saves content of Shape as SVG file.
+         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
          */
-        writeAsSvg(arg1: java.io.OutputStream, arg2: ISVGOptions): void;
+        setX(arg1: number): void;
 
         /**
-         * Returns shape thumbnail.
+         * Returns an internal, presentation-scoped identifier intended for use by add-ins or other code. Because this value can be reassigned by the user or programmatically, it must not be treated as a persistent unique key. Read-only long. See also getOfficeInteropShapeId().
          */
-        getImage(arg1: number, arg2: number, arg3: number): IImage;
+        getUniqueId(): number;
 
         /**
-         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
          */
-        getHeight(): number;
+        getHyperlinkClick(): IHyperlink;
 
         /**
-         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         * Determines whether the shape is hidden. Read/write boolean.
          */
-        setY(arg1: number): void;
+        setHidden(arg1: boolean): void;
 
         /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         * Returns or sets the alternative text associated with a shape. Read/write String.
          */
-        setHyperlinkMouseOver(arg1: IHyperlink): void;
+        getAlternativeText(): string;
 
         /**
-         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         * Returns the placeholder for a shape. Read-only IPlaceholder.
          */
-        setHeight(arg1: number): void;
+        getPlaceholder(): IPlaceholder;
 
         /**
-         * Returns shape's locks. Read-only IBaseShapeLock.
+         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
          */
-        getShapeLock(): IBaseShapeLock;
+        setWidth(arg1: number): void;
 
         /**
-         * Returns the shape's custom data. Read-only ICustomData.
+         * Returns the base slide. Read-only IBaseSlide.
          */
-        getCustomData(): ICustomData;
+        getSlide(): IBaseSlide;
+
+        /**
+         * Returns or sets the alternative text associated with a shape. Read/write String.
+         */
+        setAlternativeText(arg1: string): void;
+
+        /**
+         * Returns a slide-scoped unique identifier that remains constant for the lifetime of the shape and lets PowerPoint or interop code reliably reference the shape from anywhere in the document. Read-only long. See also getUniqueId().
+         */
+        getOfficeInteropShapeId(): number;
+
+        /**
+         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
+         */
+        setRawFrame(arg1: IShapeFrame): void;
 
     }
 
@@ -20485,64 +20485,14 @@ declare module "aspose.slides.via.java" {
         getShapes(): IShapeCollection;
 
         /**
-         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setWidth(arg1: number): void;
-
-        /**
-         * Returns or sets the title of alternative text associated with a shape. Read/write String.
-         */
-        setAlternativeTextTitle(arg1: string): void;
-
-        /**
-         * Gets or sets 'Mark as decorative' option Reed/write boolean.
-         */
-        isDecorative(): boolean;
-
-        /**
-         * Returns a basic placeholder shape (shape from the layout and/or master slide that the current shape is inherited from). A null is returned if the current shape is not inherited.
-         */
-        getBasePlaceholder(): IShape;
-
-        /**
-         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getX(): number;
-
-        /**
          * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
          */
         setHeight(arg1: number): void;
 
         /**
-         * Determines whether the shape is grouped. Read-only boolean. Property getParentGroup() returns parent GroupShape object if shape is grouped.
+         * Returns the EffectFormat object which contains pixel effects applied to a shape. Note: can return null for certain types of shapes which don't have effect properties. Read-only IEffectFormat.
          */
-        isGrouped(): boolean;
-
-        /**
-         * Returns the parent slide of a shape. Read-only IBaseSlide.
-         */
-        getSlide(): IBaseSlide;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
-         */
-        getHyperlinkMouseOver(): IHyperlink;
-
-        /**
-         * Determines whether the shape is hidden. Read/write boolean.
-         */
-        setHidden(arg1: boolean): void;
-
-        /**
-         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
-         */
-        setRotation(arg1: number): void;
-
-        /**
-         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setX(arg1: number): void;
+        getEffectFormat(): IEffectFormat;
 
         /**
          * Returns or sets the name of a shape. Must be not null. Use empty string value if needed. Read/write String.
@@ -20550,94 +20500,14 @@ declare module "aspose.slides.via.java" {
         setName(arg1: string): void;
 
         /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         * Returns shape's locks. Read-only IBaseShapeLock.
          */
-        setHyperlinkMouseOver(arg1: IHyperlink): void;
+        getShapeLock(): IBaseShapeLock;
 
         /**
-         * Returns or sets the alternative text associated with a shape. Read/write String.
+         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
          */
-        setAlternativeText(arg1: string): void;
-
-        /**
-         * Returns the number of connection sites on the shape. Read-only int.
-         */
-        getConnectionSiteCount(): number;
-
-        /**
-         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
-         */
-        setBlackWhiteMode(arg1: number): void;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
-         */
-        setHyperlinkClick(arg1: IHyperlink): void;
-
-        /**
-         * Adds a new placeholder if there is no and sets placeholder properties to a specified one.
-         */
-        addPlaceholder(arg1: IPlaceholder): IPlaceholder;
-
-        /**
-         * Returns the parent presentation of a slide. Read-only IPresentation.
-         */
-        getPresentation(): IPresentation;
-
-        /**
-         * Returns a slide-scoped unique identifier that remains constant for the lifetime of the shape and lets PowerPoint or interop code reliably reference the shape from anywhere in the document. Read-only long. See also getUniqueId().
-         */
-        getOfficeInteropShapeId(): number;
-
-        /**
-         * Returns or sets the name of a shape. Must be not null. Use empty string value if needed. Read/write String.
-         */
-        getName(): string;
-
-        /**
-         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
-         */
-        setFrame(arg1: IShapeFrame): void;
-
-        /**
-         * Gets or sets 'Mark as decorative' option Reed/write boolean.
-         */
-        setDecorative(arg1: boolean): void;
-
-        /**
-         * Determines whether the shape is TextHolder_PPT. Read-only boolean.
-         */
-        isTextHolder(): boolean;
-
-        /**
-         * Returns or sets the alternative text associated with a shape. Read/write String.
-         */
-        getAlternativeText(): string;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
-         */
-        getHyperlinkClick(): IHyperlink;
-
-        /**
-         * Returns or sets the title of alternative text associated with a shape. Read/write String.
-         */
-        getAlternativeTextTitle(): string;
-
-        /**
-         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setY(arg1: number): void;
-
-        /**
-         * Returns shape thumbnail.
-         */
-        getImage(): IImage;
-
-        /**
-         * Returns the shape's custom data. Read-only ICustomData.
-         */
-        getCustomData(): ICustomData;
+        getRawFrame(): IShapeFrame;
 
         /**
          * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
@@ -20647,7 +20517,12 @@ declare module "aspose.slides.via.java" {
         /**
          * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
          */
-        getBlackWhiteMode(): number;
+        setBlackWhiteMode(arg1: number): void;
+
+        /**
+         * Gets the visual bounds of the shape calculated from its rendered content.
+         */
+        getVisualBounds(): java.awt.geom.Rectangle2D$Float;
 
         /**
          * Returns the hyperlink manager. Read-only IHyperlinkManager.
@@ -20655,24 +20530,24 @@ declare module "aspose.slides.via.java" {
         getHyperlinkManager(): IHyperlinkManager;
 
         /**
-         * Defines that this shape isn't a placeholder.
+         * Returns the number of connection sites on the shape. Read-only int.
          */
-        removePlaceholder(): void;
+        getConnectionSiteCount(): number;
 
         /**
-         * Returns the ThreeDFormat object that 3d effect properties for a shape. Note: can return null for certain types of shapes which don't have 3d properties. Read-only IThreeDFormat.
+         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
          */
-        getThreeDFormat(): IThreeDFormat;
+        setX(arg1: number): void;
 
         /**
-         * Returns the placeholder for a shape. Returns null if the shape has no placeholder. Read-only IPlaceholder.
+         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
          */
-        getPlaceholder(): IPlaceholder;
+        setY(arg1: number): void;
 
         /**
-         * Saves content of Shape as SVG file.
+         * Gets or sets 'Mark as decorative' option Reed/write boolean.
          */
-        writeAsSvg(arg1: java.io.OutputStream, arg2: ISVGOptions): void;
+        setDecorative(arg1: boolean): void;
 
         /**
          * Determines whether the shape is hidden. Read/write boolean.
@@ -20680,29 +20555,79 @@ declare module "aspose.slides.via.java" {
         getHidden(): boolean;
 
         /**
-         * Returns the position of a shape in the z-order. Shapes[0] returns the shape at the back of the z-order, and Shapes[Shapes.Count - 1] returns the shape at the front of the z-order. Read-only int.
+         * Returns or sets the title of alternative text associated with a shape. Read/write String.
          */
-        getZOrderPosition(): number;
+        setAlternativeTextTitle(arg1: string): void;
 
         /**
-         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
+         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
          */
-        setRawFrame(arg1: IShapeFrame): void;
+        setRotation(arg1: number): void;
 
         /**
-         * Returns the EffectFormat object which contains pixel effects applied to a shape. Note: can return null for certain types of shapes which don't have effect properties. Read-only IEffectFormat.
+         * Returns a slide-scoped unique identifier that remains constant for the lifetime of the shape and lets PowerPoint or interop code reliably reference the shape from anywhere in the document. Read-only long. See also getUniqueId().
          */
-        getEffectFormat(): IEffectFormat;
+        getOfficeInteropShapeId(): number;
 
         /**
-         * Returns shape thumbnail.
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
          */
-        getImage(arg1: number, arg2: number, arg3: number): IImage;
+        setHyperlinkMouseOver(arg1: IHyperlink): void;
 
         /**
-         * Returns shape's locks. Read-only IBaseShapeLock.
+         * Returns the shape's custom data. Read-only ICustomData.
          */
-        getShapeLock(): IBaseShapeLock;
+        getCustomData(): ICustomData;
+
+        /**
+         * Returns or sets the alternative text associated with a shape. Read/write String.
+         */
+        setAlternativeText(arg1: string): void;
+
+        /**
+         * Gets or sets 'Mark as decorative' option Reed/write boolean.
+         */
+        isDecorative(): boolean;
+
+        /**
+         * Returns the ThreeDFormat object that 3d effect properties for a shape. Note: can return null for certain types of shapes which don't have 3d properties. Read-only IThreeDFormat.
+         */
+        getThreeDFormat(): IThreeDFormat;
+
+        /**
+         * Determines whether the shape is grouped. Read-only boolean. Property getParentGroup() returns parent GroupShape object if shape is grouped.
+         */
+        isGrouped(): boolean;
+
+        /**
+         * Defines that this shape isn't a placeholder.
+         */
+        removePlaceholder(): void;
+
+        /**
+         * Returns or sets the title of alternative text associated with a shape. Read/write String.
+         */
+        getAlternativeTextTitle(): string;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         */
+        getHyperlinkMouseOver(): IHyperlink;
+
+        /**
+         * Returns or sets the name of a shape. Must be not null. Use empty string value if needed. Read/write String.
+         */
+        getName(): string;
+
+        /**
+         * Determines whether the shape is TextHolder_PPT. Read-only boolean.
+         */
+        isTextHolder(): boolean;
+
+        /**
+         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setWidth(arg1: number): void;
 
         /**
          * Saves content of Shape as SVG file.
@@ -20710,24 +20635,9 @@ declare module "aspose.slides.via.java" {
         writeAsSvg(arg1: java.io.OutputStream): void;
 
         /**
-         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
-         */
-        getFrame(): IShapeFrame;
-
-        /**
          * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
          */
-        getRawFrame(): IShapeFrame;
-
-        /**
-         * Returns parent GroupShape object if shape is grouped. Otherwise returns null. Read-only IGroupShape. Property isGrouped() determines whether the shape is grouped.
-         */
-        getParentGroup(): IGroupShape;
-
-        /**
-         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getHeight(): number;
+        setRawFrame(arg1: IShapeFrame): void;
 
         /**
          * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
@@ -20735,9 +20645,39 @@ declare module "aspose.slides.via.java" {
         getWidth(): number;
 
         /**
+         * Returns an internal, presentation-scoped identifier intended for use by add-ins or other code. Because this value can be reassigned by the user or programmatically, it must not be treated as a persistent unique key. Read-only long. See also getOfficeInteropShapeId().
+         */
+        getUniqueId(): number;
+
+        /**
+         * Determines whether the shape is hidden. Read/write boolean.
+         */
+        setHidden(arg1: boolean): void;
+
+        /**
+         * Returns a basic placeholder shape (shape from the layout and/or master slide that the current shape is inherited from). A null is returned if the current shape is not inherited.
+         */
+        getBasePlaceholder(): IShape;
+
+        /**
          * Returns the FillFormat object that contains fill formatting properties for a shape. Note: can return null for certain types of shapes which don't have fill properties. Read-only IFillFormat.
          */
         getFillFormat(): IFillFormat;
+
+        /**
+         * Adds a new placeholder if there is no and sets placeholder properties to a specified one.
+         */
+        addPlaceholder(arg1: IPlaceholder): IPlaceholder;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
+         */
+        setHyperlinkClick(arg1: IHyperlink): void;
+
+        /**
+         * Returns the position of a shape in the z-order. Shapes[0] returns the shape at the back of the z-order, and Shapes[Shapes.Count - 1] returns the shape at the front of the z-order. Read-only int.
+         */
+        getZOrderPosition(): number;
 
         /**
          * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
@@ -20745,14 +20685,74 @@ declare module "aspose.slides.via.java" {
         getRotation(): number;
 
         /**
-         * Returns an internal, presentation-scoped identifier intended for use by add-ins or other code. Because this value can be reassigned by the user or programmatically, it must not be treated as a persistent unique key. Read-only long. See also getOfficeInteropShapeId().
+         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
          */
-        getUniqueId(): number;
+        setFrame(arg1: IShapeFrame): void;
 
         /**
-         * Gets the visual bounds of the shape calculated from its rendered content.
+         * Returns shape thumbnail.
          */
-        getVisualBounds(): java.awt.geom.Rectangle2D$Float;
+        getImage(): IImage;
+
+        /**
+         * Saves content of Shape as SVG file.
+         */
+        writeAsSvg(arg1: java.io.OutputStream, arg2: ISVGOptions): void;
+
+        /**
+         * Returns parent GroupShape object if shape is grouped. Otherwise returns null. Read-only IGroupShape. Property isGrouped() determines whether the shape is grouped.
+         */
+        getParentGroup(): IGroupShape;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
+         */
+        getHyperlinkClick(): IHyperlink;
+
+        /**
+         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         */
+        getFrame(): IShapeFrame;
+
+        /**
+         * Returns the parent slide of a shape. Read-only IBaseSlide.
+         */
+        getSlide(): IBaseSlide;
+
+        /**
+         * Returns the placeholder for a shape. Returns null if the shape has no placeholder. Read-only IPlaceholder.
+         */
+        getPlaceholder(): IPlaceholder;
+
+        /**
+         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
+         */
+        getBlackWhiteMode(): number;
+
+        /**
+         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getHeight(): number;
+
+        /**
+         * Returns shape thumbnail.
+         */
+        getImage(arg1: number, arg2: number, arg3: number): IImage;
+
+        /**
+         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getX(): number;
+
+        /**
+         * Returns or sets the alternative text associated with a shape. Read/write String.
+         */
+        getAlternativeText(): string;
+
+        /**
+         * Returns the parent presentation of a slide. Read-only IPresentation.
+         */
+        getPresentation(): IPresentation;
 
     }
 
@@ -20770,12 +20770,12 @@ declare module "aspose.slides.via.java" {
         /**
          * Creates a new instance of SystemException.
          */
-        constructor(arg1: string, arg2: java.lang.Throwable);
+        constructor(arg1: java.lang.Throwable);
 
         /**
          * Creates a new instance of SystemException.
          */
-        constructor(arg1: java.lang.Throwable);
+        constructor(arg1: string, arg2: java.lang.Throwable);
 
     }
 
@@ -20836,29 +20836,19 @@ declare module "aspose.slides.via.java" {
         getTransparency(): number;
 
         /**
+         * Returns down diagonal line format effective value. Read-only ILineFormatEffectiveData.
+         */
+        getBorderDiagonalDown(): ILineFormatEffectiveData;
+
+        /**
          * Returns right border line format effective value. Read-only ILineFormatEffectiveData.
          */
         getBorderRight(): ILineFormatEffectiveData;
 
         /**
-         * Returns left border line format effective value. Read-only ILineFormatEffectiveData.
+         * Returns fill format effective value. Read-only IFillFormatEffectiveData.
          */
-        getBorderLeft(): ILineFormatEffectiveData;
-
-        /**
-         * Returns bottom border line format effective value. Read-only ILineFormatEffectiveData.
-         */
-        getBorderBottom(): ILineFormatEffectiveData;
-
-        /**
-         * Returns top border line format effective value. Read-only ILineFormatEffectiveData.
-         */
-        getBorderTop(): ILineFormatEffectiveData;
-
-        /**
-         * Returns down diagonal line format effective value. Read-only ILineFormatEffectiveData.
-         */
-        getBorderDiagonalDown(): ILineFormatEffectiveData;
+        getFillFormat(): IFillFormatEffectiveData;
 
         /**
          * Returns up diagonal line format effective value. Read-only ILineFormatEffectiveData.
@@ -20866,9 +20856,19 @@ declare module "aspose.slides.via.java" {
         getBorderDiagonalUp(): ILineFormatEffectiveData;
 
         /**
-         * Returns fill format effective value. Read-only IFillFormatEffectiveData.
+         * Returns bottom border line format effective value. Read-only ILineFormatEffectiveData.
          */
-        getFillFormat(): IFillFormatEffectiveData;
+        getBorderBottom(): ILineFormatEffectiveData;
+
+        /**
+         * Returns left border line format effective value. Read-only ILineFormatEffectiveData.
+         */
+        getBorderLeft(): ILineFormatEffectiveData;
+
+        /**
+         * Returns top border line format effective value. Read-only ILineFormatEffectiveData.
+         */
+        getBorderTop(): ILineFormatEffectiveData;
 
     }
 
@@ -20933,34 +20933,9 @@ declare module "aspose.slides.via.java" {
         get_Item(arg1: number): ICell;
 
         /**
-         * @returns boolean
-         */
-        isSynchronized(): boolean;
-
-        /**
-         * @returns IGenericEnumerator
-         */
-        iteratorJava(): IGenericEnumerator;
-
-        /**
          * @returns IEnumerator
          */
         iterator(): IEnumerator;
-
-        /**
-         * Returns the base slide. Read-only IBaseSlide.
-         */
-        getSlide(): IBaseSlide;
-
-        /**
-         * Returns the presentation. Read-only IPresentation.
-         */
-        getPresentation(): IPresentation;
-
-        /**
-         * @returns number
-         */
-        size(): number;
 
         /**
          * @returns IGenericEnumerator
@@ -20968,9 +20943,34 @@ declare module "aspose.slides.via.java" {
         iterator(): IGenericEnumerator;
 
         /**
+         * Returns the presentation. Read-only IPresentation.
+         */
+        getPresentation(): IPresentation;
+
+        /**
+         * @returns boolean
+         */
+        isSynchronized(): boolean;
+
+        /**
          * @returns java.lang.Object
          */
         getSyncRoot(): java.lang.Object;
+
+        /**
+         * @returns IGenericEnumerator
+         */
+        iteratorJava(): IGenericEnumerator;
+
+        /**
+         * @returns number
+         */
+        size(): number;
+
+        /**
+         * Returns the base slide. Read-only IBaseSlide.
+         */
+        getSlide(): IBaseSlide;
 
     }
 
@@ -21139,41 +21139,6 @@ declare module "aspose.slides.via.java" {
         setSlidesLayoutOptions(arg1: ISlidesLayoutOptions): void;
 
         /**
-         * Represents a callback object for saving progress updates in percentage. See IProgressCallback.
-         */
-        setProgressCallback(arg1: IProgressCallback): void;
-
-        /**
-         * Returns or sets the visual style of the gradient. Read/write GradientStyle.
-         */
-        getGradientStyle(): number;
-
-        /**
-         * Returns or sets an object which receives warnings and decides whether loading process will continue or will be aborted. Read/write IWarningCallback.
-         */
-        getWarningCallback(): IWarningCallback;
-
-        /**
-         * Returns or sets an object which receives warnings and decides whether loading process will continue or will be aborted. Read/write IWarningCallback.
-         */
-        setWarningCallback(arg1: IWarningCallback): void;
-
-        /**
-         * Returns or sets the visual style of the gradient. Read/write GradientStyle.
-         */
-        setGradientStyle(arg1: number): void;
-
-        /**
-         * Returns or sets font used in case source font is not found. Read-write String.
-         */
-        getDefaultRegularFont(): string;
-
-        /**
-         * Represents a callback object for saving progress updates in percentage. See IProgressCallback.
-         */
-        getProgressCallback(): IProgressCallback;
-
-        /**
          * Returns or sets font used in case source font is not found. Read-write String.
          */
         setDefaultRegularFont(arg1: string): void;
@@ -21184,9 +21149,44 @@ declare module "aspose.slides.via.java" {
         getSkipJavaScriptLinks(): boolean;
 
         /**
+         * Represents a callback object for saving progress updates in percentage. See IProgressCallback.
+         */
+        getProgressCallback(): IProgressCallback;
+
+        /**
+         * Represents a callback object for saving progress updates in percentage. See IProgressCallback.
+         */
+        setProgressCallback(arg1: IProgressCallback): void;
+
+        /**
+         * Returns or sets an object which receives warnings and decides whether loading process will continue or will be aborted. Read/write IWarningCallback.
+         */
+        getWarningCallback(): IWarningCallback;
+
+        /**
          * Specifies whether to skip hyperlinks with JavaScript calls when saving the presentation. Read/write boolean. The default value is false. When this property is set to true, hyperlinks with JavaScript calls will be ignored while saving. When this property is set to false, all hyperlinks will be saved.
          */
         setSkipJavaScriptLinks(arg1: boolean): void;
+
+        /**
+         * Returns or sets an object which receives warnings and decides whether loading process will continue or will be aborted. Read/write IWarningCallback.
+         */
+        setWarningCallback(arg1: IWarningCallback): void;
+
+        /**
+         * Returns or sets the visual style of the gradient. Read/write GradientStyle.
+         */
+        getGradientStyle(): number;
+
+        /**
+         * Returns or sets font used in case source font is not found. Read-write String.
+         */
+        getDefaultRegularFont(): string;
+
+        /**
+         * Returns or sets the visual style of the gradient. Read/write GradientStyle.
+         */
+        setGradientStyle(arg1: number): void;
 
     }
 
@@ -21225,9 +21225,9 @@ declare module "aspose.slides.via.java" {
         size(): number;
 
         /**
-         * @returns IGenericEnumerator
+         * @returns IEnumerator
          */
-        iterator(): IGenericEnumerator;
+        iterator(): IEnumerator;
 
         /**
          * @returns boolean
@@ -21235,14 +21235,14 @@ declare module "aspose.slides.via.java" {
         isSynchronized(): boolean;
 
         /**
-         * @returns IEnumerator
+         * @returns IGenericEnumerator
          */
-        iterator(): IEnumerator;
+        iteratorJava(): IGenericEnumerator;
 
         /**
          * @returns IGenericEnumerator
          */
-        iteratorJava(): IGenericEnumerator;
+        iterator(): IGenericEnumerator;
 
     }
 
@@ -21338,14 +21338,9 @@ declare module "aspose.slides.via.java" {
      */
     export class IEmbeddedWoffFontsHtmlController {
         /**
-         * Called to write html slide header. Called once per each of slides.
+         * Called before shape's rendering. Called once per each of shape. If this function writes anything to generator, current slide image generation will be finished, added html fragment inserted and new image will be started atop of the previous.
          */
-        writeSlideStart(arg1: IHtmlGenerator, arg2: ISlide): void;
-
-        /**
-         * Called to write html slide footer. Called once per each of slides.
-         */
-        writeSlideEnd(arg1: IHtmlGenerator, arg2: ISlide): void;
+        writeShapeStart(arg1: IHtmlGenerator, arg2: IShape): void;
 
         /**
          * Called before shape's rendering. Called once per each of shape. If this function writes anything to generator, current slide image generation will be finished, added html fragment inserted and new image will be started atop of the previous.
@@ -21358,14 +21353,19 @@ declare module "aspose.slides.via.java" {
         writeDocumentStart(arg1: IHtmlGenerator, arg2: IPresentation): void;
 
         /**
+         * Called to write html slide header. Called once per each of slides.
+         */
+        writeSlideStart(arg1: IHtmlGenerator, arg2: ISlide): void;
+
+        /**
+         * Called to write html slide footer. Called once per each of slides.
+         */
+        writeSlideEnd(arg1: IHtmlGenerator, arg2: ISlide): void;
+
+        /**
          * Called to write html document footer. Called once per presentation conversion.
          */
         writeDocumentEnd(arg1: IHtmlGenerator, arg2: IPresentation): void;
-
-        /**
-         * Called before shape's rendering. Called once per each of shape. If this function writes anything to generator, current slide image generation will be finished, added html fragment inserted and new image will be started atop of the previous.
-         */
-        writeShapeStart(arg1: IHtmlGenerator, arg2: IShape): void;
 
     }
 
@@ -21389,24 +21389,24 @@ declare module "aspose.slides.via.java" {
         constructor(arg1: string, arg2: java.lang.RuntimeException);
 
         /**
-         * @returns java.lang.Throwable
-         */
-        getInnerException(): java.lang.Throwable;
-
-        /**
-         * Creates a new instance of Exception.
-         */
-        constructor(arg1: string, arg2: java.lang.Throwable);
-
-        /**
          * Creates a new instance of Exception.
          */
         constructor(arg1: java.lang.Throwable);
 
         /**
+         * @returns java.lang.Throwable
+         */
+        getInnerException(): java.lang.Throwable;
+
+        /**
          * @returns string
          */
         toString(): string;
+
+        /**
+         * Creates a new instance of Exception.
+         */
+        constructor(arg1: string, arg2: java.lang.Throwable);
 
     }
 
@@ -21465,14 +21465,9 @@ declare module "aspose.slides.via.java" {
         setDateTimeAndChildDateTimesText(arg1: string): void;
 
         /**
-         * Gets value indicating that a date-time placeholder is present. Read boolean.
+         * Changes slide page number placeholder visibility.
          */
-        isDateTimeVisible(): boolean;
-
-        /**
-         * Changes slide footer placeholder visibility.
-         */
-        setFooterVisibility(arg1: boolean): void;
+        setSlideNumberVisibility(arg1: boolean): void;
 
         /**
          * Changes slide date-time placeholder visibility.
@@ -21485,14 +21480,19 @@ declare module "aspose.slides.via.java" {
         isFooterVisible(): boolean;
 
         /**
-         * Gets value indicating that a page number placeholder is present. Read boolean.
+         * Sets text to slide date-time placeholder.
          */
-        isSlideNumberVisible(): boolean;
+        setDateTimeText(arg1: string): void;
 
         /**
-         * Changes slide page number placeholder visibility.
+         * Gets value indicating that a date-time placeholder is present. Read boolean.
          */
-        setSlideNumberVisibility(arg1: boolean): void;
+        isDateTimeVisible(): boolean;
+
+        /**
+         * Changes slide footer placeholder visibility.
+         */
+        setFooterVisibility(arg1: boolean): void;
 
         /**
          * Sets text to slide footer placeholder.
@@ -21500,9 +21500,9 @@ declare module "aspose.slides.via.java" {
         setFooterText(arg1: string): void;
 
         /**
-         * Sets text to slide date-time placeholder.
+         * Gets value indicating that a page number placeholder is present. Read boolean.
          */
-        setDateTimeText(arg1: string): void;
+        isSlideNumberVisible(): boolean;
 
     }
 
@@ -21661,164 +21661,9 @@ declare module "aspose.slides.via.java" {
         setRoundedCorners(arg1: boolean): void;
 
         /**
-         * Returns the placeholder for a shape. Read-only IPlaceholder.
-         */
-        getPlaceholder(): IPlaceholder;
-
-        /**
-         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
-         */
-        setFrame(arg1: IShapeFrame): void;
-
-        /**
-         * Returns the base slide. Read-only IBaseSlide.
-         */
-        getSlide(): IBaseSlide;
-
-        /**
-         * Determines whether the shape is TextHolder. Read-only boolean.
-         */
-        isTextHolder(): boolean;
-
-        /**
-         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setY(arg1: number): void;
-
-        /**
-         * Returns an internal, presentation-scoped identifier intended for use by add-ins or other code. Because this value can be reassigned by the user or programmatically, it must not be treated as a persistent unique key. Read-only long. See also getOfficeInteropShapeId().
-         */
-        getUniqueId(): number;
-
-        /**
-         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
-         */
-        setBlackWhiteMode(arg1: number): void;
-
-        /**
-         * Returns chart text format. Read-only IChartTextFormat.
-         */
-        getTextFormat(): IChartTextFormat;
-
-        /**
-         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getHeight(): number;
-
-        /**
-         * Hyperlinks manager Read-only IHyperlinkManager.
-         */
-        getHyperlinkManager(): IHyperlinkManager;
-
-        /**
-         * Saves content of Shape as SVG file.
-         */
-        writeAsSvg(arg1: java.io.OutputStream, arg2: ISVGOptions): void;
-
-        /**
-         * Returns a basic placeholder shape (shape from the layout and/or master slide that the current shape is inherited from). A null is returned if the current shape is not inherited.
-         */
-        getBasePlaceholder(): IShape;
-
-        /**
-         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
-         */
-        getRotation(): number;
-
-        /**
-         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getY(): number;
-
-        /**
-         * Returns or sets the title of alternative text associated with a shape. Read/write String.
-         */
-        getAlternativeTextTitle(): string;
-
-        /**
-         * Returns the presentation. Read-only IPresentation.
-         */
-        getPresentation(): IPresentation;
-
-        /**
-         * Returns the position of a shape in the z-order. Shapes[0] returns the shape at the back of the z-order, and Shapes[Shapes.Count - 1] returns the shape at the front of the z-order. Read-only int.
-         */
-        getZOrderPosition(): number;
-
-        /**
-         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
-         */
-        setRotation(arg1: number): void;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
-         */
-        setHyperlinkClick(arg1: IHyperlink): void;
-
-        /**
-         * Returns shape's locks. Read-only IBaseShapeLock.
-         */
-        getShapeLock(): IBaseShapeLock;
-
-        /**
-         * Gets or sets 'Mark as decorative' option Reed/write boolean.
-         */
-        setDecorative(arg1: boolean): void;
-
-        /**
-         * Returns shape thumbnail.
-         */
-        getImage(arg1: number, arg2: number, arg3: number): IImage;
-
-        /**
-         * Returns the number of connection sites on the shape. Read-only int.
-         */
-        getConnectionSiteCount(): number;
-
-        /**
-         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getX(): number;
-
-        /**
-         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setX(arg1: number): void;
-
-        /**
-         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setWidth(arg1: number): void;
-
-        /**
-         * Returns the LineFormat object that contains line formatting properties for a shape. Read-only ILineFormat.
-         */
-        getLineFormat(): ILineFormat;
-
-        /**
-         * Returns or sets the name of a shape. Read/write String.
-         */
-        setName(arg1: string): void;
-
-        /**
          * Defines that this shape isn't a placeholder.
          */
         removePlaceholder(): void;
-
-        /**
-         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setHeight(arg1: number): void;
-
-        /**
-         * Returns shape thumbnail.
-         */
-        getImage(): IImage;
-
-        /**
-         * Determines whether the shape is hidden. Read/write boolean.
-         */
-        getHidden(): boolean;
 
         /**
          * Returns the ThreeDFormat object that contains line formatting properties for a shape. Read-only IThreeDFormat.
@@ -21826,69 +21671,9 @@ declare module "aspose.slides.via.java" {
         getThreeDFormat(): IThreeDFormat;
 
         /**
-         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
-         */
-        setRawFrame(arg1: IShapeFrame): void;
-
-        /**
-         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getWidth(): number;
-
-        /**
-         * Saves content of Shape as SVG file.
-         */
-        writeAsSvg(arg1: java.io.OutputStream): void;
-
-        /**
-         * Returns the FillFormat object that contains fill formatting properties for a shape. Read-only IFillFormat.
-         */
-        getFillFormat(): IFillFormat;
-
-        /**
-         * Gets or sets 'Mark as decorative' option Reed/write boolean.
-         */
-        isDecorative(): boolean;
-
-        /**
-         * Returns override theme manager. Read-only IOverrideThemeManager.
-         */
-        getThemeManager(): IOverrideThemeManager;
-
-        /**
-         * Returns or sets the alternative text associated with a shape. Read/write String.
-         */
-        setAlternativeText(arg1: string): void;
-
-        /**
          * Returns shape's locks. Read-only IGraphicalObjectLock.
          */
         getGraphicalObjectLock(): IGraphicalObjectLock;
-
-        /**
-         * Returns a slide-scoped unique identifier that remains constant for the lifetime of the shape and lets PowerPoint or interop code reliably reference the shape from anywhere in the document. Read-only long. See also getUniqueId().
-         */
-        getOfficeInteropShapeId(): number;
-
-        /**
-         * Returns parent GroupShape object if shape is grouped. Otherwise returns null. Read-only IGroupShape. Property isGrouped() determines whether the shape is grouped.
-         */
-        getParentGroup(): IGroupShape;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
-         */
-        setHyperlinkMouseOver(arg1: IHyperlink): void;
-
-        /**
-         * Returns the shape's custom data. Read-only ICustomData.
-         */
-        getCustomData(): ICustomData;
-
-        /**
-         * Determines whether the shape is grouped. Read-only boolean. Property getParentGroup() returns parent GroupShape object if shape is grouped.
-         */
-        isGrouped(): boolean;
 
         /**
          * Adds a new placeholder if there is no and sets placeholder properties to a specified one.
@@ -21896,19 +21681,24 @@ declare module "aspose.slides.via.java" {
         addPlaceholder(arg1: IPlaceholder): IPlaceholder;
 
         /**
-         * Returns the EffectFormat object which contains pixel effects applied to a shape. Read-only IEffectFormat.
+         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
          */
-        getEffectFormat(): IEffectFormat;
+        setWidth(arg1: number): void;
 
         /**
-         * Determines whether the shape is hidden. Read/write boolean.
+         * Determines whether the shape is grouped. Read-only boolean. Property getParentGroup() returns parent GroupShape object if shape is grouped.
          */
-        setHidden(arg1: boolean): void;
+        isGrouped(): boolean;
 
         /**
-         * Returns the chart. Read-only IChart.
+         * Saves content of Shape as SVG file.
          */
-        getChart(): IChart;
+        writeAsSvg(arg1: java.io.OutputStream): void;
+
+        /**
+         * Returns the base slide. Read-only IBaseSlide.
+         */
+        getSlide(): IBaseSlide;
 
         /**
          * Returns or sets the alternative text associated with a shape. Read/write String.
@@ -21916,14 +21706,9 @@ declare module "aspose.slides.via.java" {
         getAlternativeText(): string;
 
         /**
-         * Returns or sets the title of alternative text associated with a shape. Read/write String.
+         * Returns the presentation. Read-only IPresentation.
          */
-        setAlternativeTextTitle(arg1: string): void;
-
-        /**
-         * Returns an effective theme for this themeable object.
-         */
-        createThemeEffective(): IThemeEffectiveData;
+        getPresentation(): IPresentation;
 
         /**
          * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
@@ -21931,14 +21716,19 @@ declare module "aspose.slides.via.java" {
         getHyperlinkClick(): IHyperlink;
 
         /**
-         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
          */
-        getFrame(): IShapeFrame;
+        setHyperlinkClick(arg1: IHyperlink): void;
 
         /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
          */
-        getHyperlinkMouseOver(): IHyperlink;
+        getX(): number;
+
+        /**
+         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getWidth(): number;
 
         /**
          * Returns or sets the name of a shape. Read/write String.
@@ -21946,14 +21736,224 @@ declare module "aspose.slides.via.java" {
         getName(): string;
 
         /**
-         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
+         * Determines whether the shape is TextHolder. Read-only boolean.
          */
-        getBlackWhiteMode(): number;
+        isTextHolder(): boolean;
+
+        /**
+         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
+         */
+        getRotation(): number;
+
+        /**
+         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setX(arg1: number): void;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         */
+        setHyperlinkMouseOver(arg1: IHyperlink): void;
+
+        /**
+         * Returns a slide-scoped unique identifier that remains constant for the lifetime of the shape and lets PowerPoint or interop code reliably reference the shape from anywhere in the document. Read-only long. See also getUniqueId().
+         */
+        getOfficeInteropShapeId(): number;
+
+        /**
+         * Returns an internal, presentation-scoped identifier intended for use by add-ins or other code. Because this value can be reassigned by the user or programmatically, it must not be treated as a persistent unique key. Read-only long. See also getOfficeInteropShapeId().
+         */
+        getUniqueId(): number;
+
+        /**
+         * Determines whether the shape is hidden. Read/write boolean.
+         */
+        setHidden(arg1: boolean): void;
+
+        /**
+         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
+         */
+        setRotation(arg1: number): void;
+
+        /**
+         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getY(): number;
+
+        /**
+         * Returns an effective theme for this themeable object.
+         */
+        createThemeEffective(): IThemeEffectiveData;
+
+        /**
+         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setY(arg1: number): void;
+
+        /**
+         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setHeight(arg1: number): void;
+
+        /**
+         * Returns the EffectFormat object which contains pixel effects applied to a shape. Read-only IEffectFormat.
+         */
+        getEffectFormat(): IEffectFormat;
+
+        /**
+         * Gets or sets 'Mark as decorative' option Reed/write boolean.
+         */
+        setDecorative(arg1: boolean): void;
 
         /**
          * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
          */
         getRawFrame(): IShapeFrame;
+
+        /**
+         * Returns or sets the alternative text associated with a shape. Read/write String.
+         */
+        setAlternativeText(arg1: string): void;
+
+        /**
+         * Determines whether the shape is hidden. Read/write boolean.
+         */
+        getHidden(): boolean;
+
+        /**
+         * Returns the position of a shape in the z-order. Shapes[0] returns the shape at the back of the z-order, and Shapes[Shapes.Count - 1] returns the shape at the front of the z-order. Read-only int.
+         */
+        getZOrderPosition(): number;
+
+        /**
+         * Returns the FillFormat object that contains fill formatting properties for a shape. Read-only IFillFormat.
+         */
+        getFillFormat(): IFillFormat;
+
+        /**
+         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         */
+        setFrame(arg1: IShapeFrame): void;
+
+        /**
+         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getHeight(): number;
+
+        /**
+         * Returns the chart. Read-only IChart.
+         */
+        getChart(): IChart;
+
+        /**
+         * Returns a basic placeholder shape (shape from the layout and/or master slide that the current shape is inherited from). A null is returned if the current shape is not inherited.
+         */
+        getBasePlaceholder(): IShape;
+
+        /**
+         * Returns shape thumbnail.
+         */
+        getImage(arg1: number, arg2: number, arg3: number): IImage;
+
+        /**
+         * Returns shape's locks. Read-only IBaseShapeLock.
+         */
+        getShapeLock(): IBaseShapeLock;
+
+        /**
+         * Returns chart text format. Read-only IChartTextFormat.
+         */
+        getTextFormat(): IChartTextFormat;
+
+        /**
+         * Returns or sets the title of alternative text associated with a shape. Read/write String.
+         */
+        setAlternativeTextTitle(arg1: string): void;
+
+        /**
+         * Returns the placeholder for a shape. Read-only IPlaceholder.
+         */
+        getPlaceholder(): IPlaceholder;
+
+        /**
+         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
+         */
+        getBlackWhiteMode(): number;
+
+        /**
+         * Saves content of Shape as SVG file.
+         */
+        writeAsSvg(arg1: java.io.OutputStream, arg2: ISVGOptions): void;
+
+        /**
+         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
+         */
+        setRawFrame(arg1: IShapeFrame): void;
+
+        /**
+         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
+         */
+        setBlackWhiteMode(arg1: number): void;
+
+        /**
+         * Returns the shape's custom data. Read-only ICustomData.
+         */
+        getCustomData(): ICustomData;
+
+        /**
+         * Returns shape thumbnail.
+         */
+        getImage(): IImage;
+
+        /**
+         * Returns the number of connection sites on the shape. Read-only int.
+         */
+        getConnectionSiteCount(): number;
+
+        /**
+         * Returns or sets the title of alternative text associated with a shape. Read/write String.
+         */
+        getAlternativeTextTitle(): string;
+
+        /**
+         * Returns or sets the name of a shape. Read/write String.
+         */
+        setName(arg1: string): void;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         */
+        getHyperlinkMouseOver(): IHyperlink;
+
+        /**
+         * Returns the LineFormat object that contains line formatting properties for a shape. Read-only ILineFormat.
+         */
+        getLineFormat(): ILineFormat;
+
+        /**
+         * Hyperlinks manager Read-only IHyperlinkManager.
+         */
+        getHyperlinkManager(): IHyperlinkManager;
+
+        /**
+         * Gets or sets 'Mark as decorative' option Reed/write boolean.
+         */
+        isDecorative(): boolean;
+
+        /**
+         * Returns parent GroupShape object if shape is grouped. Otherwise returns null. Read-only IGroupShape. Property isGrouped() determines whether the shape is grouped.
+         */
+        getParentGroup(): IGroupShape;
+
+        /**
+         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         */
+        getFrame(): IShapeFrame;
+
+        /**
+         * Returns override theme manager. Read-only IOverrideThemeManager.
+         */
+        getThemeManager(): IOverrideThemeManager;
 
     }
 
@@ -22134,24 +22134,9 @@ declare module "aspose.slides.via.java" {
         setPoints(arg1: IPointCollection): void;
 
         /**
-         * Represents whether animation behaviors are accumulated. Read/write NullableBool.
-         */
-        getAccumulate(): number;
-
-        /**
          * Represents whether the current animation behavior is combined with other running animations. Read/write BehaviorAdditiveType.
          */
         getAdditive(): number;
-
-        /**
-         * Represents timing properties for the effect behavior. Read/write ITiming.
-         */
-        setTiming(arg1: ITiming): void;
-
-        /**
-         * Represents timing properties for the effect behavior. Read/write ITiming.
-         */
-        getTiming(): ITiming;
 
         /**
          * Represents whether animation behaviors are accumulated. Read/write NullableBool.
@@ -22159,14 +22144,29 @@ declare module "aspose.slides.via.java" {
         setAccumulate(arg1: number): void;
 
         /**
+         * Represents properties of behavior. Read-only IBehaviorPropertyCollection.
+         */
+        getProperties(): IBehaviorPropertyCollection;
+
+        /**
+         * Represents whether animation behaviors are accumulated. Read/write NullableBool.
+         */
+        getAccumulate(): number;
+
+        /**
          * Represents whether the current animation behavior is combined with other running animations. Read/write BehaviorAdditiveType.
          */
         setAdditive(arg1: number): void;
 
         /**
-         * Represents properties of behavior. Read-only IBehaviorPropertyCollection.
+         * Represents timing properties for the effect behavior. Read/write ITiming.
          */
-        getProperties(): IBehaviorPropertyCollection;
+        getTiming(): ITiming;
+
+        /**
+         * Represents timing properties for the effect behavior. Read/write ITiming.
+         */
+        setTiming(arg1: ITiming): void;
 
     }
 
@@ -22215,9 +22215,39 @@ declare module "aspose.slides.via.java" {
         setCompressionLevel(arg1: number): void;
 
         /**
+         * Returns or sets font used in case source font is not found. Read-write String.
+         */
+        getDefaultRegularFont(): string;
+
+        /**
+         * Returns or sets font used in case source font is not found. Read-write String.
+         */
+        setDefaultRegularFont(arg1: string): void;
+
+        /**
          * Specifies whether to skip hyperlinks with JavaScript calls when saving the presentation. Read/write boolean. The default value is false. When this property is set to true, hyperlinks with JavaScript calls will be ignored while saving. When this property is set to false, all hyperlinks will be saved.
          */
         setSkipJavaScriptLinks(arg1: boolean): void;
+
+        /**
+         * Returns or sets an object which receives warnings and decides whether loading process will continue or will be aborted. Read/write IWarningCallback.
+         */
+        setWarningCallback(arg1: IWarningCallback): void;
+
+        /**
+         * Specifies whether to skip hyperlinks with JavaScript calls when saving the presentation. Read/write boolean. The default value is false. When this property is set to true, hyperlinks with JavaScript calls will be ignored while saving. When this property is set to false, all hyperlinks will be saved.
+         */
+        getSkipJavaScriptLinks(): boolean;
+
+        /**
+         * Returns or sets an object which receives warnings and decides whether loading process will continue or will be aborted. Read/write IWarningCallback.
+         */
+        getWarningCallback(): IWarningCallback;
+
+        /**
+         * Returns or sets the visual style of the gradient. Read/write GradientStyle.
+         */
+        setGradientStyle(arg1: number): void;
 
         /**
          * Represents a callback object for saving progress updates in percentage. See IProgressCallback.
@@ -22232,37 +22262,7 @@ declare module "aspose.slides.via.java" {
         /**
          * Returns or sets the visual style of the gradient. Read/write GradientStyle.
          */
-        setGradientStyle(arg1: number): void;
-
-        /**
-         * Returns or sets the visual style of the gradient. Read/write GradientStyle.
-         */
         getGradientStyle(): number;
-
-        /**
-         * Returns or sets font used in case source font is not found. Read-write String.
-         */
-        setDefaultRegularFont(arg1: string): void;
-
-        /**
-         * Returns or sets an object which receives warnings and decides whether loading process will continue or will be aborted. Read/write IWarningCallback.
-         */
-        getWarningCallback(): IWarningCallback;
-
-        /**
-         * Returns or sets an object which receives warnings and decides whether loading process will continue or will be aborted. Read/write IWarningCallback.
-         */
-        setWarningCallback(arg1: IWarningCallback): void;
-
-        /**
-         * Returns or sets font used in case source font is not found. Read-write String.
-         */
-        getDefaultRegularFont(): string;
-
-        /**
-         * Specifies whether to skip hyperlinks with JavaScript calls when saving the presentation. Read/write boolean. The default value is false. When this property is set to true, hyperlinks with JavaScript calls will be ignored while saving. When this property is set to false, all hyperlinks will be saved.
-         */
-        getSkipJavaScriptLinks(): boolean;
 
     }
 
@@ -22884,14 +22884,14 @@ declare module "aspose.slides.via.java" {
         getCount(): number;
 
         /**
-         * @returns IGenericEnumerator
-         */
-        iterator(): IGenericEnumerator;
-
-        /**
          * @returns IEnumerator
          */
         iterator(): IEnumerator;
+
+        /**
+         * @returns IGenericEnumerator
+         */
+        iterator(): IGenericEnumerator;
 
     }
 
@@ -23023,12 +23023,12 @@ declare module "aspose.slides.via.java" {
         /**
          * Creates a new instance of SystemException.
          */
-        constructor(arg1: java.lang.Throwable);
+        constructor(arg1: string, arg2: java.lang.Throwable);
 
         /**
          * Creates a new instance of SystemException.
          */
-        constructor(arg1: string, arg2: java.lang.Throwable);
+        constructor(arg1: java.lang.Throwable);
 
     }
 
@@ -23916,24 +23916,14 @@ declare module "aspose.slides.via.java" {
         setSpellCheck(arg1: boolean): void;
 
         /**
+         * Description copied from interface: ISlideComponent
+         */
+        getSlide(): IBaseSlide;
+
+        /**
          * Compares with specified object.
          */
         equals(arg1: java.lang.Object): boolean;
-
-        /**
-         * Description copied from interface: IPresentationComponent
-         */
-        getPresentation(): IPresentation;
-
-        /**
-         * Description copied from interface: ISlideComponent
-         */
-        getSlide(): BaseSlide;
-
-        /**
-         * Description copied from interface: IPresentationComponent
-         */
-        getPresentation(): Presentation;
 
         /**
          * Returns hash code.
@@ -23946,14 +23936,24 @@ declare module "aspose.slides.via.java" {
         getParent_ISlideComponent(): ISlideComponent;
 
         /**
-         * Description copied from interface: ISlideComponent
+         * Description copied from interface: IPresentationComponent
          */
-        getSlide(): IBaseSlide;
+        getPresentation(): IPresentation;
 
         /**
          * Returns parent IPresentationComponent. Read-only IPresentationComponent.
          */
         getParent_IPresentationComponent(): IPresentationComponent;
+
+        /**
+         * Description copied from interface: IPresentationComponent
+         */
+        getPresentation(): Presentation;
+
+        /**
+         * Description copied from interface: ISlideComponent
+         */
+        getSlide(): BaseSlide;
 
     }
 
@@ -23972,24 +23972,24 @@ declare module "aspose.slides.via.java" {
         setRootDirectoryClsid(arg1: java.util.UUID): void;
 
         /**
-         * Returns or sets font used in case source font is not found. Read-write String.
+         * Returns or sets the visual style of the gradient. Read/write GradientStyle.
          */
-        getDefaultRegularFont(): string;
-
-        /**
-         * Returns or sets font used in case source font is not found. Read-write String.
-         */
-        setDefaultRegularFont(arg1: string): void;
-
-        /**
-         * Specifies whether to skip hyperlinks with JavaScript calls when saving the presentation. Read/write boolean. The default value is false. When this property is set to true, hyperlinks with JavaScript calls will be ignored while saving. When this property is set to false, all hyperlinks will be saved.
-         */
-        setSkipJavaScriptLinks(arg1: boolean): void;
+        getGradientStyle(): number;
 
         /**
          * Returns or sets the visual style of the gradient. Read/write GradientStyle.
          */
-        getGradientStyle(): number;
+        setGradientStyle(arg1: number): void;
+
+        /**
+         * Returns or sets an object which receives warnings and decides whether loading process will continue or will be aborted. Read/write IWarningCallback.
+         */
+        setWarningCallback(arg1: IWarningCallback): void;
+
+        /**
+         * Specifies whether to skip hyperlinks with JavaScript calls when saving the presentation. Read/write boolean. The default value is false. When this property is set to true, hyperlinks with JavaScript calls will be ignored while saving. When this property is set to false, all hyperlinks will be saved.
+         */
+        getSkipJavaScriptLinks(): boolean;
 
         /**
          * Returns or sets an object which receives warnings and decides whether loading process will continue or will be aborted. Read/write IWarningCallback.
@@ -24002,14 +24002,9 @@ declare module "aspose.slides.via.java" {
         getProgressCallback(): IProgressCallback;
 
         /**
-         * Specifies whether to skip hyperlinks with JavaScript calls when saving the presentation. Read/write boolean. The default value is false. When this property is set to true, hyperlinks with JavaScript calls will be ignored while saving. When this property is set to false, all hyperlinks will be saved.
+         * Returns or sets font used in case source font is not found. Read-write String.
          */
-        getSkipJavaScriptLinks(): boolean;
-
-        /**
-         * Returns or sets an object which receives warnings and decides whether loading process will continue or will be aborted. Read/write IWarningCallback.
-         */
-        setWarningCallback(arg1: IWarningCallback): void;
+        getDefaultRegularFont(): string;
 
         /**
          * Represents a callback object for saving progress updates in percentage. See IProgressCallback.
@@ -24017,9 +24012,14 @@ declare module "aspose.slides.via.java" {
         setProgressCallback(arg1: IProgressCallback): void;
 
         /**
-         * Returns or sets the visual style of the gradient. Read/write GradientStyle.
+         * Returns or sets font used in case source font is not found. Read-write String.
          */
-        setGradientStyle(arg1: number): void;
+        setDefaultRegularFont(arg1: string): void;
+
+        /**
+         * Specifies whether to skip hyperlinks with JavaScript calls when saving the presentation. Read/write boolean. The default value is false. When this property is set to true, hyperlinks with JavaScript calls will be ignored while saving. When this property is set to false, all hyperlinks will be saved.
+         */
+        setSkipJavaScriptLinks(arg1: boolean): void;
 
     }
 
@@ -24356,54 +24356,9 @@ declare module "aspose.slides.via.java" {
         getDrawingGuides(): IDrawingGuidesCollection;
 
         /**
-         * Returns or sets the name of a slide. Read/write String.
-         */
-        getName(): string;
-
-        /**
-         * Returns or sets the name of a slide. Read/write String.
-         */
-        setName(arg1: string): void;
-
-        /**
-         * Returns the base slide. Read-only IBaseSlide.
-         */
-        getSlide(): IBaseSlide;
-
-        /**
-         * Returns animation timeline object. Read-only IAnimationTimeLine.
-         */
-        getTimeline(): IAnimationTimeLine;
-
-        /**
          * Returns the ID of a slide. Read-only long.
          */
         getSlideId(): number;
-
-        /**
-         * Specifies if shapes on the master slide should be shown on slides or not. For master slide itself this property always returns false. Read/write boolean.
-         */
-        setShowMasterShapes(arg1: boolean): void;
-
-        /**
-         * Returns slide's background. Read-only IBackground.
-         */
-        getBackground(): IBackground;
-
-        /**
-         * Determines whether the two IBaseSlide instances are equal. Returning value is calculated based on slide's structure and static content. Two slides are equal if all shapes, styles, texts, animation and other settings. etc. are equal. The comparison doesn't take into account unique identifier values, e.g. SlideId and dynamic content, e.g. current date value in Date Placeholder.
-         */
-        equals(arg1: IBaseSlide): boolean;
-
-        /**
-         * Returns the presentation. Read-only IPresentation.
-         */
-        getPresentation(): IPresentation;
-
-        /**
-         * Specifies if shapes on the master slide should be shown on slides or not. For master slide itself this property always returns false. Read/write boolean.
-         */
-        getShowMasterShapes(): boolean;
 
         /**
          * Returns the slide's custom data. Read-only ICustomData.
@@ -24411,29 +24366,29 @@ declare module "aspose.slides.via.java" {
         getCustomData(): ICustomData;
 
         /**
-         * Returns an effective theme for this themeable object.
+         * Returns slide's background. Read-only IBackground.
          */
-        createThemeEffective(): IThemeEffectiveData;
+        getBackground(): IBackground;
 
         /**
-         * Returns the collection of ActiveX controls on a slide. Read-only IControlCollection.
+         * Returns animation timeline object. Read-only IAnimationTimeLine.
          */
-        getControls(): IControlCollection;
+        getTimeline(): IAnimationTimeLine;
 
         /**
-         * Returns the TransitionEx object which contains information about how the specified slide advances during a slide show. Read-only ISlideShowTransition.
+         * Joins runs with same formatting in all paragraphs in all acceptable shapes.
          */
-        getSlideShowTransition(): ISlideShowTransition;
+        joinPortionsWithSameFormatting(): void;
 
         /**
-         * Provides easy access to contained hyperlinks. Read-only IHyperlinkQueries.
+         * Specifies if shapes on the master slide should be shown on slides or not. For master slide itself this property always returns false. Read/write boolean.
          */
-        getHyperlinkQueries(): IHyperlinkQueries;
+        getShowMasterShapes(): boolean;
 
         /**
-         * Returns master theme manager. Read-only IMasterThemeManager.
+         * Returns the base slide. Read-only IBaseSlide.
          */
-        getThemeManager(): IMasterThemeManager;
+        getSlide(): IBaseSlide;
 
         /**
          * Finds first occurrence of a shape with the specified alternative text.
@@ -24441,14 +24396,59 @@ declare module "aspose.slides.via.java" {
         findShapeByAltText(arg1: string): IShape;
 
         /**
+         * Returns the TransitionEx object which contains information about how the specified slide advances during a slide show. Read-only ISlideShowTransition.
+         */
+        getSlideShowTransition(): ISlideShowTransition;
+
+        /**
+         * Returns the presentation. Read-only IPresentation.
+         */
+        getPresentation(): IPresentation;
+
+        /**
+         * Returns or sets the name of a slide. Read/write String.
+         */
+        setName(arg1: string): void;
+
+        /**
+         * Provides easy access to contained hyperlinks. Read-only IHyperlinkQueries.
+         */
+        getHyperlinkQueries(): IHyperlinkQueries;
+
+        /**
+         * Returns an effective theme for this themeable object.
+         */
+        createThemeEffective(): IThemeEffectiveData;
+
+        /**
+         * Specifies if shapes on the master slide should be shown on slides or not. For master slide itself this property always returns false. Read/write boolean.
+         */
+        setShowMasterShapes(arg1: boolean): void;
+
+        /**
          * Returns the shapes of a slide. Read-only IShapeCollection.
          */
         getShapes(): IShapeCollection;
 
         /**
-         * Joins runs with same formatting in all paragraphs in all acceptable shapes.
+         * Determines whether the two IBaseSlide instances are equal. Returning value is calculated based on slide's structure and static content. Two slides are equal if all shapes, styles, texts, animation and other settings. etc. are equal. The comparison doesn't take into account unique identifier values, e.g. SlideId and dynamic content, e.g. current date value in Date Placeholder.
          */
-        joinPortionsWithSameFormatting(): void;
+        equals(arg1: IBaseSlide): boolean;
+
+        /**
+         * Returns or sets the name of a slide. Read/write String.
+         */
+        getName(): string;
+
+        /**
+         * Returns the collection of ActiveX controls on a slide. Read-only IControlCollection.
+         */
+        getControls(): IControlCollection;
+
+        /**
+         * Returns master theme manager. Read-only IMasterThemeManager.
+         */
+        getThemeManager(): IMasterThemeManager;
 
     }
 
@@ -24502,24 +24502,19 @@ declare module "aspose.slides.via.java" {
         clear(): void;
 
         /**
-         * @returns boolean
-         */
-        isSynchronized(): boolean;
-
-        /**
          * @returns IEnumerator
          */
         iterator(): IEnumerator;
 
         /**
-         * @returns number
-         */
-        size(): number;
-
-        /**
          * @returns IGenericEnumerator
          */
         iteratorJava(): IGenericEnumerator;
+
+        /**
+         * @returns boolean
+         */
+        isSynchronized(): boolean;
 
         /**
          * @returns IGenericEnumerator
@@ -24530,6 +24525,11 @@ declare module "aspose.slides.via.java" {
          * @returns java.lang.Object
          */
         getSyncRoot(): java.lang.Object;
+
+        /**
+         * @returns number
+         */
+        size(): number;
 
     }
 
@@ -25374,11 +25374,6 @@ declare module "aspose.slides.via.java" {
         setBubbleSizeRepresentation(arg1: number): void;
 
         /**
-         * Returns the chart. Read-only IChart.
-         */
-        getChart(): IChart;
-
-        /**
          * Returns the presentation. Read-only IPresentation.
          */
         getPresentation(): IPresentation;
@@ -25387,6 +25382,11 @@ declare module "aspose.slides.via.java" {
          * Returns the base slide. Read-only IBaseSlide.
          */
         getSlide(): IBaseSlide;
+
+        /**
+         * Returns the chart. Read-only IChart.
+         */
+        getChart(): IChart;
 
     }
 
@@ -25525,19 +25525,9 @@ declare module "aspose.slides.via.java" {
         setSubtype(arg1: number): void;
 
         /**
-         * Represents whether animation behaviors are accumulated. Read/write NullableBool.
-         */
-        getAccumulate(): number;
-
-        /**
          * Represents whether the current animation behavior is combined with other running animations. Read/write BehaviorAdditiveType.
          */
         getAdditive(): number;
-
-        /**
-         * Represents whether animation behaviors are accumulated. Read/write NullableBool.
-         */
-        setAccumulate(arg1: number): void;
 
         /**
          * Represents properties of behavior. Read-only IBehaviorPropertyCollection.
@@ -25552,12 +25542,22 @@ declare module "aspose.slides.via.java" {
         /**
          * Represents timing properties for the effect behavior. Read/write ITiming.
          */
-        getTiming(): ITiming;
+        setTiming(arg1: ITiming): void;
 
         /**
          * Represents timing properties for the effect behavior. Read/write ITiming.
          */
-        setTiming(arg1: ITiming): void;
+        getTiming(): ITiming;
+
+        /**
+         * Represents whether animation behaviors are accumulated. Read/write NullableBool.
+         */
+        setAccumulate(arg1: number): void;
+
+        /**
+         * Represents whether animation behaviors are accumulated. Read/write NullableBool.
+         */
+        getAccumulate(): number;
 
     }
 
@@ -25626,39 +25626,19 @@ declare module "aspose.slides.via.java" {
         getDrawingGuides(): IDrawingGuidesCollection;
 
         /**
-         * Returns the slide's custom data. Read-only ICustomData.
+         * Returns the Transition object which contains information about how the specified slide advances during a slide show. Read-only ISlideShowTransition.
          */
-        getCustomData(): ICustomData;
+        getSlideShowTransition(): ISlideShowTransition;
 
         /**
-         * Provides easy access to contained hyperlinks. Read-only IHyperlinkQueries.
+         * Returns the collection of ActiveX controls on a slide. Read-only IControlCollection.
          */
-        getHyperlinkQueries(): IHyperlinkQueries;
+        getControls(): IControlCollection;
 
         /**
-         * Returns or sets the name of a slide. Read/write String.
+         * Determines whether the two IBaseSlide instances are equal. Returning value is calculated based on slide's structure and static content. Two slides are equal if all shapes, styles, texts, animation and other settings. etc. are equal. The comparison doesn't take into account unique identifier values, e.g. SlideId and dynamic content, e.g. current date value in Date Placeholder.
          */
-        setName(arg1: string): void;
-
-        /**
-         * Returns an effective theme for this slide.
-         */
-        createThemeEffective(): IThemeEffectiveData;
-
-        /**
-         * Returns slide's background. Read-only IBackground.
-         */
-        getBackground(): IBackground;
-
-        /**
-         * Returns the ID of a slide. Read-only long.
-         */
-        getSlideId(): number;
-
-        /**
-         * Description copied from interface: ISlideComponent
-         */
-        getSlide(): IBaseSlide;
+        equals(arg1: IBaseSlide): boolean;
 
         /**
          * Returns animation timeline object. Read-only IAnimationTimeLine.
@@ -25666,19 +25646,14 @@ declare module "aspose.slides.via.java" {
         getTimeline(): IAnimationTimeLine;
 
         /**
-         * Returns the Transition object which contains information about how the specified slide advances during a slide show. Read-only ISlideShowTransition.
-         */
-        getSlideShowTransition(): ISlideShowTransition;
-
-        /**
          * Finds first occurrence of a shape with the specified alternative text.
          */
         findShapeByAltText(arg1: string): IShape;
 
         /**
-         * Returns or sets the name of a slide. Read/write String.
+         * Returns the shapes of a slide. Read-only IShapeCollection.
          */
-        getName(): string;
+        getShapes(): IShapeCollection;
 
         /**
          * Joins runs with same formatting in all paragraphs in all acceptable shapes.
@@ -25691,9 +25666,39 @@ declare module "aspose.slides.via.java" {
         getPresentation(): IPresentation;
 
         /**
-         * Returns the shapes of a slide. Read-only IShapeCollection.
+         * Returns slide's background. Read-only IBackground.
          */
-        getShapes(): IShapeCollection;
+        getBackground(): IBackground;
+
+        /**
+         * Provides easy access to contained hyperlinks. Read-only IHyperlinkQueries.
+         */
+        getHyperlinkQueries(): IHyperlinkQueries;
+
+        /**
+         * Description copied from interface: ISlideComponent
+         */
+        getSlide(): IBaseSlide;
+
+        /**
+         * Returns the ID of a slide. Read-only long.
+         */
+        getSlideId(): number;
+
+        /**
+         * Returns an effective theme for this slide.
+         */
+        createThemeEffective(): IThemeEffectiveData;
+
+        /**
+         * Returns or sets the name of a slide. Read/write String.
+         */
+        getName(): string;
+
+        /**
+         * Returns the slide's custom data. Read-only ICustomData.
+         */
+        getCustomData(): ICustomData;
 
         /**
          * Joins runs with same formatting in all paragraphs in all acceptable shapes.
@@ -25701,14 +25706,9 @@ declare module "aspose.slides.via.java" {
         joinPortionsWithSameFormatting(arg1: IShapeCollection): void;
 
         /**
-         * Determines whether the two IBaseSlide instances are equal. Returning value is calculated based on slide's structure and static content. Two slides are equal if all shapes, styles, texts, animation and other settings. etc. are equal. The comparison doesn't take into account unique identifier values, e.g. SlideId and dynamic content, e.g. current date value in Date Placeholder.
+         * Returns or sets the name of a slide. Read/write String.
          */
-        equals(arg1: IBaseSlide): boolean;
-
-        /**
-         * Returns the collection of ActiveX controls on a slide. Read-only IControlCollection.
-         */
-        getControls(): IControlCollection;
+        setName(arg1: string): void;
 
     }
 
@@ -25897,179 +25897,14 @@ declare module "aspose.slides.via.java" {
         getCaptionTracks(): ICaptionsCollection;
 
         /**
-         * Returns or sets the scale of height(relative to original picture size) of the picture frame. Value 1.0 corresponds to 100%. Read/write float.
-         */
-        getRelativeScaleHeight(): number;
-
-        /**
-         * Returns a collection of shape's adjustment values. Read-only IAdjustValueCollection.
-         */
-        getAdjustments(): IAdjustValueCollection;
-
-        /**
-         * Determines whether the shape is hidden. Read/write boolean.
-         */
-        setHidden(arg1: boolean): void;
-
-        /**
-         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getY(): number;
-
-        /**
-         * Returns a basic placeholder shape (shape from the layout and/or master slide that the current shape is inherited from). A null is returned if the current shape is not inherited.
-         */
-        getBasePlaceholder(): IShape;
-
-        /**
-         * Returns or sets the scale of width (relative to original picture size) of the picture frame. Value 1.0 corresponds to 100%. Read/write float.
-         */
-        setRelativeScaleWidth(arg1: number): void;
-
-        /**
-         * Returns PictureFrame's locks. Read-only IPictureFrameLock.
-         */
-        getPictureFrameLock(): IPictureFrameLock;
-
-        /**
-         * Returns the position of a shape in the z-order. Shapes[0] returns the shape at the back of the z-order, and Shapes[Shapes.Count - 1] returns the shape at the front of the z-order. Read-only int.
-         */
-        getZOrderPosition(): number;
-
-        /**
-         * Returns parent GroupShape object if shape is grouped. Otherwise returns null. Read-only IGroupShape. Property isGrouped() determines whether the shape is grouped.
-         */
-        getParentGroup(): IGroupShape;
-
-        /**
-         * Returns or sets the geometry preset type. Note: on value changing all adjustment values will reset to their default values. Read/write ShapeType.
-         */
-        setShapeType(arg1: number): void;
-
-        /**
-         * Returns the ThreeDFormat object that contains line formatting properties for a shape. Read-only IThreeDFormat.
-         */
-        getThreeDFormat(): IThreeDFormat;
-
-        /**
-         * Returns the EffectFormat object which contains pixel effects applied to a shape. Read-only IEffectFormat.
-         */
-        getEffectFormat(): IEffectFormat;
-
-        /**
-         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setX(arg1: number): void;
-
-        /**
-         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setWidth(arg1: number): void;
-
-        /**
-         * Gets or sets 'Mark as decorative' option Reed/write boolean.
-         */
-        isDecorative(): boolean;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
-         */
-        getHyperlinkClick(): IHyperlink;
-
-        /**
-         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
-         */
-        getRawFrame(): IShapeFrame;
-
-        /**
-         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
-         */
-        getBlackWhiteMode(): number;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
-         */
-        getHyperlinkMouseOver(): IHyperlink;
-
-        /**
-         * Returns or sets the alternative text associated with a shape. Read/write String.
-         */
-        setAlternativeText(arg1: string): void;
-
-        /**
          * Returns the PictureFillFormat object for a picture frame. Read-only IPictureFillFormat.
          */
         getPictureFormat(): IPictureFillFormat;
 
         /**
-         * Returns the LineFormat object that contains line formatting properties for a shape. Read-only ILineFormat.
+         * Returns or sets the scale of width (relative to original picture size) of the picture frame. Value 1.0 corresponds to 100%. Read/write float.
          */
-        getLineFormat(): ILineFormat;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
-         */
-        setHyperlinkClick(arg1: IHyperlink): void;
-
-        /**
-         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
-         */
-        setRawFrame(arg1: IShapeFrame): void;
-
-        /**
-         * Determines whether the shape is grouped. Read-only boolean. Property getParentGroup() returns parent GroupShape object if shape is grouped.
-         */
-        isGrouped(): boolean;
-
-        /**
-         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getX(): number;
-
-        /**
-         * Saves content of Shape as SVG file.
-         */
-        writeAsSvg(arg1: java.io.OutputStream, arg2: ISVGOptions): void;
-
-        /**
-         * Returns or sets the title of alternative text associated with a shape. Read/write String.
-         */
-        getAlternativeTextTitle(): string;
-
-        /**
-         * Returns shape's locks. Read-only IBaseShapeLock.
-         */
-        getShapeLock(): IBaseShapeLock;
-
-        /**
-         * Returns or sets the name of a shape. Read/write String.
-         */
-        setName(arg1: string): void;
-
-        /**
-         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
-         */
-        setRotation(arg1: number): void;
-
-        /**
-         * Returns the FillFormat object that contains fill formatting properties for a shape. Read-only IFillFormat.
-         */
-        getFillFormat(): IFillFormat;
-
-        /**
-         * Determines whether the shape is hidden. Read/write boolean.
-         */
-        getHidden(): boolean;
-
-        /**
-         * Returns or sets the title of alternative text associated with a shape. Read/write String.
-         */
-        setAlternativeTextTitle(arg1: string): void;
-
-        /**
-         * Returns the presentation. Read-only IPresentation.
-         */
-        getPresentation(): IPresentation;
+        getRelativeScaleWidth(): number;
 
         /**
          * Determines whether the shape is TextHolder. Read-only boolean.
@@ -26082,9 +25917,49 @@ declare module "aspose.slides.via.java" {
         getConnectionSiteCount(): number;
 
         /**
+         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getWidth(): number;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
+         */
+        setHyperlinkClick(arg1: IHyperlink): void;
+
+        /**
+         * Updates shape geometry from IGeometryPath object. Coordinates must be relative to the left top corner of the shape. Changes the type of the shape (ShapeType(getShapeType()/setShapeType(int))) to ShapeType.Custom.
+         */
+        setGeometryPath(arg1: IGeometryPath): void;
+
+        /**
+         * Returns or sets the scale of height(relative to original picture size) of the picture frame. Value 1.0 corresponds to 100%. Read/write float.
+         */
+        getRelativeScaleHeight(): number;
+
+        /**
+         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
+         */
+        getRotation(): number;
+
+        /**
+         * Saves content of Shape as SVG file.
+         */
+        writeAsSvg(arg1: java.io.OutputStream, arg2: ISVGOptions): void;
+
+        /**
+         * Creates and returns array of shape's elements.
+         */
+        createShapeElements(): IShapeElement[];
+
+        /**
+         * Returns the FillFormat object that contains fill formatting properties for a shape. Read-only IFillFormat.
+         */
+        getFillFormat(): IFillFormat;
+
+        /**
          * Returns shape thumbnail.
          */
-        getImage(arg1: number, arg2: number, arg3: number): IImage;
+        getImage(): IImage;
 
         /**
          * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
@@ -26092,14 +25967,54 @@ declare module "aspose.slides.via.java" {
         setY(arg1: number): void;
 
         /**
-         * Defines that this shape isn't a placeholder.
+         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
          */
-        removePlaceholder(): void;
+        setHeight(arg1: number): void;
 
         /**
-         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
+         * Returns shape's locks. Read-only IBaseShapeLock.
          */
-        getRotation(): number;
+        getShapeLock(): IBaseShapeLock;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         */
+        getHyperlinkMouseOver(): IHyperlink;
+
+        /**
+         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         */
+        getFrame(): IShapeFrame;
+
+        /**
+         * Returns parent GroupShape object if shape is grouped. Otherwise returns null. Read-only IGroupShape. Property isGrouped() determines whether the shape is grouped.
+         */
+        getParentGroup(): IGroupShape;
+
+        /**
+         * Hyperlinks manager Read-only IHyperlinkManager.
+         */
+        getHyperlinkManager(): IHyperlinkManager;
+
+        /**
+         * Returns PictureFrame's locks. Read-only IPictureFrameLock.
+         */
+        getPictureFrameLock(): IPictureFrameLock;
+
+        /**
+         * Returns or sets the title of alternative text associated with a shape. Read/write String.
+         */
+        setAlternativeTextTitle(arg1: string): void;
+
+        /**
+         * Returns or sets the scale of height(relative to original picture size) of the picture frame. Value 1.0 corresponds to 100%. Read/write float.
+         */
+        setRelativeScaleHeight(arg1: number): void;
+
+        /**
+         * Returns the EffectFormat object which contains pixel effects applied to a shape. Read-only IEffectFormat.
+         */
+        getEffectFormat(): IEffectFormat;
 
         /**
          * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
@@ -26109,37 +26024,7 @@ declare module "aspose.slides.via.java" {
         /**
          * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
          */
-        getFrame(): IShapeFrame;
-
-        /**
-         * Saves content of Shape as SVG file.
-         */
-        writeAsSvg(arg1: java.io.OutputStream): void;
-
-        /**
-         * Gets or sets 'Mark as decorative' option Reed/write boolean.
-         */
-        setDecorative(arg1: boolean): void;
-
-        /**
-         * Returns a slide-scoped unique identifier that remains constant for the lifetime of the shape and lets PowerPoint or interop code reliably reference the shape from anywhere in the document. Read-only long. See also getUniqueId().
-         */
-        getOfficeInteropShapeId(): number;
-
-        /**
-         * Returns the copy of path of the geometry shape. Coordinates are relative to the left top corner of the shape.
-         */
-        getGeometryPaths(): IGeometryPath[];
-
-        /**
-         * Creates and returns array of shape's elements.
-         */
-        createShapeElements(): IShapeElement[];
-
-        /**
-         * Returns or sets the geometry preset type. Note: on value changing all adjustment values will reset to their default values. Read/write ShapeType.
-         */
-        getShapeType(): number;
+        setFrame(arg1: IShapeFrame): void;
 
         /**
          * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
@@ -26147,24 +26032,104 @@ declare module "aspose.slides.via.java" {
         setBlackWhiteMode(arg1: number): void;
 
         /**
-         * Adds a new placeholder if there is no and sets placeholder properties to a specified one.
+         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
          */
-        addPlaceholder(arg1: IPlaceholder): IPlaceholder;
+        getY(): number;
 
         /**
-         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
          */
-        setHeight(arg1: number): void;
-
-        /**
-         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
-         */
-        setFrame(arg1: IShapeFrame): void;
+        getHyperlinkClick(): IHyperlink;
 
         /**
          * Returns or sets the name of a shape. Read/write String.
          */
         getName(): string;
+
+        /**
+         * Returns a slide-scoped unique identifier that remains constant for the lifetime of the shape and lets PowerPoint or interop code reliably reference the shape from anywhere in the document. Read-only long. See also getUniqueId().
+         */
+        getOfficeInteropShapeId(): number;
+
+        /**
+         * Gets or sets 'Mark as decorative' option Reed/write boolean.
+         */
+        setDecorative(arg1: boolean): void;
+
+        /**
+         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setX(arg1: number): void;
+
+        /**
+         * Returns shape thumbnail.
+         */
+        getImage(arg1: number, arg2: number, arg3: number): IImage;
+
+        /**
+         * Returns the position of a shape in the z-order. Shapes[0] returns the shape at the back of the z-order, and Shapes[Shapes.Count - 1] returns the shape at the front of the z-order. Read-only int.
+         */
+        getZOrderPosition(): number;
+
+        /**
+         * Returns or sets the name of a shape. Read/write String.
+         */
+        setName(arg1: string): void;
+
+        /**
+         * Adds a new placeholder if there is no and sets placeholder properties to a specified one.
+         */
+        addPlaceholder(arg1: IPlaceholder): IPlaceholder;
+
+        /**
+         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
+         */
+        setRotation(arg1: number): void;
+
+        /**
+         * Determines whether the shape is hidden. Read/write boolean.
+         */
+        setHidden(arg1: boolean): void;
+
+        /**
+         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setWidth(arg1: number): void;
+
+        /**
+         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
+         */
+        getRawFrame(): IShapeFrame;
+
+        /**
+         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getX(): number;
+
+        /**
+         * Returns the base slide. Read-only IBaseSlide.
+         */
+        getSlide(): IBaseSlide;
+
+        /**
+         * Returns the LineFormat object that contains line formatting properties for a shape. Read-only ILineFormat.
+         */
+        getLineFormat(): ILineFormat;
+
+        /**
+         * Returns a basic placeholder shape (shape from the layout and/or master slide that the current shape is inherited from). A null is returned if the current shape is not inherited.
+         */
+        getBasePlaceholder(): IShape;
+
+        /**
+         * Returns an internal, presentation-scoped identifier intended for use by add-ins or other code. Because this value can be reassigned by the user or programmatically, it must not be treated as a persistent unique key. Read-only long. See also getOfficeInteropShapeId().
+         */
+        getUniqueId(): number;
+
+        /**
+         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
+         */
+        getBlackWhiteMode(): number;
 
         /**
          * Updates shape geometry from array of IGeometryPath. Coordinates must be relative to the left top corner of the shape. Changes the type of the shape (ShapeType(getShapeType()/setShapeType(int))) to ShapeType.Custom.
@@ -26177,14 +26142,14 @@ declare module "aspose.slides.via.java" {
         getPlaceholder(): IPlaceholder;
 
         /**
-         * Returns shape thumbnail.
+         * Returns a collection of shape's adjustment values. Read-only IAdjustValueCollection.
          */
-        getImage(): IImage;
+        getAdjustments(): IAdjustValueCollection;
 
         /**
-         * Returns or sets the scale of height(relative to original picture size) of the picture frame. Value 1.0 corresponds to 100%. Read/write float.
+         * Saves content of Shape as SVG file.
          */
-        setRelativeScaleHeight(arg1: number): void;
+        writeAsSvg(arg1: java.io.OutputStream): void;
 
         /**
          * Returns the shape's custom data. Read-only ICustomData.
@@ -26192,29 +26157,49 @@ declare module "aspose.slides.via.java" {
         getCustomData(): ICustomData;
 
         /**
-         * Returns an internal, presentation-scoped identifier intended for use by add-ins or other code. Because this value can be reassigned by the user or programmatically, it must not be treated as a persistent unique key. Read-only long. See also getOfficeInteropShapeId().
+         * Returns or sets the alternative text associated with a shape. Read/write String.
          */
-        getUniqueId(): number;
+        setAlternativeText(arg1: string): void;
 
         /**
-         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         * Returns the ThreeDFormat object that contains line formatting properties for a shape. Read-only IThreeDFormat.
          */
-        getHeight(): number;
+        getThreeDFormat(): IThreeDFormat;
 
         /**
-         * Hyperlinks manager Read-only IHyperlinkManager.
+         * Gets or sets 'Mark as decorative' option Reed/write boolean.
          */
-        getHyperlinkManager(): IHyperlinkManager;
+        isDecorative(): boolean;
 
         /**
-         * Returns shape's style object. Read-only IShapeStyle.
+         * Returns or sets the geometry preset type. Note: on value changing all adjustment values will reset to their default values. Read/write ShapeType.
          */
-        getShapeStyle(): IShapeStyle;
+        getShapeType(): number;
 
         /**
-         * Updates shape geometry from IGeometryPath object. Coordinates must be relative to the left top corner of the shape. Changes the type of the shape (ShapeType(getShapeType()/setShapeType(int))) to ShapeType.Custom.
+         * Defines that this shape isn't a placeholder.
          */
-        setGeometryPath(arg1: IGeometryPath): void;
+        removePlaceholder(): void;
+
+        /**
+         * Determines whether the shape is hidden. Read/write boolean.
+         */
+        getHidden(): boolean;
+
+        /**
+         * Returns or sets the scale of width (relative to original picture size) of the picture frame. Value 1.0 corresponds to 100%. Read/write float.
+         */
+        setRelativeScaleWidth(arg1: number): void;
+
+        /**
+         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
+         */
+        setRawFrame(arg1: IShapeFrame): void;
+
+        /**
+         * Determines whether the shape is grouped. Read-only boolean. Property getParentGroup() returns parent GroupShape object if shape is grouped.
+         */
+        isGrouped(): boolean;
 
         /**
          * Returns or sets the alternative text associated with a shape. Read/write String.
@@ -26222,19 +26207,34 @@ declare module "aspose.slides.via.java" {
         getAlternativeText(): string;
 
         /**
-         * Returns the base slide. Read-only IBaseSlide.
+         * Returns the presentation. Read-only IPresentation.
          */
-        getSlide(): IBaseSlide;
+        getPresentation(): IPresentation;
 
         /**
-         * Returns or sets the scale of width (relative to original picture size) of the picture frame. Value 1.0 corresponds to 100%. Read/write float.
+         * Returns or sets the geometry preset type. Note: on value changing all adjustment values will reset to their default values. Read/write ShapeType.
          */
-        getRelativeScaleWidth(): number;
+        setShapeType(arg1: number): void;
 
         /**
-         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         * Returns shape's style object. Read-only IShapeStyle.
          */
-        getWidth(): number;
+        getShapeStyle(): IShapeStyle;
+
+        /**
+         * Returns or sets the title of alternative text associated with a shape. Read/write String.
+         */
+        getAlternativeTextTitle(): string;
+
+        /**
+         * Returns the copy of path of the geometry shape. Coordinates are relative to the left top corner of the shape.
+         */
+        getGeometryPaths(): IGeometryPath[];
+
+        /**
+         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getHeight(): number;
 
     }
 
@@ -26380,224 +26380,9 @@ declare module "aspose.slides.via.java" {
         setSubstitutePictureTitle(arg1: string): void;
 
         /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
-         */
-        setHyperlinkMouseOver(arg1: IHyperlink): void;
-
-        /**
-         * Defines that this shape isn't a placeholder.
-         */
-        removePlaceholder(): void;
-
-        /**
-         * Returns the placeholder for a shape. Read-only IPlaceholder.
-         */
-        getPlaceholder(): IPlaceholder;
-
-        /**
-         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
-         */
-        getRotation(): number;
-
-        /**
-         * Gets or sets 'Mark as decorative' option Reed/write boolean.
-         */
-        isDecorative(): boolean;
-
-        /**
-         * Returns a slide-scoped unique identifier that remains constant for the lifetime of the shape and lets PowerPoint or interop code reliably reference the shape from anywhere in the document. Read-only long. See also getUniqueId().
-         */
-        getOfficeInteropShapeId(): number;
-
-        /**
-         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setY(arg1: number): void;
-
-        /**
-         * Saves content of Shape as SVG file.
-         */
-        writeAsSvg(arg1: java.io.OutputStream): void;
-
-        /**
-         * Returns the shape's custom data. Read-only ICustomData.
-         */
-        getCustomData(): ICustomData;
-
-        /**
-         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
-         */
-        getFrame(): IShapeFrame;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
-         */
-        setHyperlinkClick(arg1: IHyperlink): void;
-
-        /**
-         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getX(): number;
-
-        /**
-         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
-         */
-        setRawFrame(arg1: IShapeFrame): void;
-
-        /**
-         * Returns or sets the alternative text associated with a shape. Read/write String.
-         */
-        setAlternativeText(arg1: string): void;
-
-        /**
-         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
-         */
-        setBlackWhiteMode(arg1: number): void;
-
-        /**
-         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setX(arg1: number): void;
-
-        /**
-         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setHeight(arg1: number): void;
-
-        /**
-         * Returns or sets the alternative text associated with a shape. Read/write String.
-         */
-        getAlternativeText(): string;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
-         */
-        getHyperlinkMouseOver(): IHyperlink;
-
-        /**
-         * Returns parent GroupShape object if shape is grouped. Otherwise returns null. Read-only IGroupShape. Property isGrouped() determines whether the shape is grouped.
-         */
-        getParentGroup(): IGroupShape;
-
-        /**
-         * Returns the EffectFormat object which contains pixel effects applied to a shape. Read-only IEffectFormat.
-         */
-        getEffectFormat(): IEffectFormat;
-
-        /**
-         * Returns the LineFormat object that contains line formatting properties for a shape. Read-only ILineFormat.
-         */
-        getLineFormat(): ILineFormat;
-
-        /**
-         * Returns or sets the name of a shape. Read/write String.
-         */
-        setName(arg1: string): void;
-
-        /**
-         * Returns the FillFormat object that contains fill formatting properties for a shape. Read-only IFillFormat.
-         */
-        getFillFormat(): IFillFormat;
-
-        /**
-         * Determines whether the shape is hidden. Read/write boolean.
-         */
-        getHidden(): boolean;
-
-        /**
-         * Returns or sets the title of alternative text associated with a shape. Read/write String.
-         */
-        getAlternativeTextTitle(): string;
-
-        /**
-         * Returns shape's locks. Read-only IBaseShapeLock.
-         */
-        getShapeLock(): IBaseShapeLock;
-
-        /**
-         * Returns or sets the name of a shape. Read/write String.
-         */
-        getName(): string;
-
-        /**
-         * Gets or sets 'Mark as decorative' option Reed/write boolean.
-         */
-        setDecorative(arg1: boolean): void;
-
-        /**
          * Returns the base slide. Read-only IBaseSlide.
          */
         getSlide(): IBaseSlide;
-
-        /**
-         * Determines whether the shape is grouped. Read-only boolean. Property getParentGroup() returns parent GroupShape object if shape is grouped.
-         */
-        isGrouped(): boolean;
-
-        /**
-         * Returns the ThreeDFormat object that contains line formatting properties for a shape. Read-only IThreeDFormat.
-         */
-        getThreeDFormat(): IThreeDFormat;
-
-        /**
-         * Adds a new placeholder if there is no and sets placeholder properties to a specified one.
-         */
-        addPlaceholder(arg1: IPlaceholder): IPlaceholder;
-
-        /**
-         * Determines whether the shape is TextHolder. Read-only boolean.
-         */
-        isTextHolder(): boolean;
-
-        /**
-         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getWidth(): number;
-
-        /**
-         * Returns the presentation. Read-only IPresentation.
-         */
-        getPresentation(): IPresentation;
-
-        /**
-         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
-         */
-        getBlackWhiteMode(): number;
-
-        /**
-         * Returns or sets the title of alternative text associated with a shape. Read/write String.
-         */
-        setAlternativeTextTitle(arg1: string): void;
-
-        /**
-         * Returns shape thumbnail.
-         */
-        getImage(): IImage;
-
-        /**
-         * Returns an internal, presentation-scoped identifier intended for use by add-ins or other code. Because this value can be reassigned by the user or programmatically, it must not be treated as a persistent unique key. Read-only long. See also getOfficeInteropShapeId().
-         */
-        getUniqueId(): number;
-
-        /**
-         * Determines whether the shape is hidden. Read/write boolean.
-         */
-        setHidden(arg1: boolean): void;
-
-        /**
-         * Saves content of Shape as SVG file.
-         */
-        writeAsSvg(arg1: java.io.OutputStream, arg2: ISVGOptions): void;
-
-        /**
-         * Returns the position of a shape in the z-order. Shapes[0] returns the shape at the back of the z-order, and Shapes[Shapes.Count - 1] returns the shape at the front of the z-order. Read-only int.
-         */
-        getZOrderPosition(): number;
-
-        /**
-         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setWidth(arg1: number): void;
 
         /**
          * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
@@ -26605,24 +26390,29 @@ declare module "aspose.slides.via.java" {
         getRawFrame(): IShapeFrame;
 
         /**
-         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         * Defines that this shape isn't a placeholder.
          */
-        setFrame(arg1: IShapeFrame): void;
+        removePlaceholder(): void;
 
         /**
-         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
+         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
          */
-        getHyperlinkClick(): IHyperlink;
+        getX(): number;
 
         /**
-         * Hyperlinks manager Read-only IHyperlinkManager.
+         * Returns shape's locks. Read-only IBaseShapeLock.
          */
-        getHyperlinkManager(): IHyperlinkManager;
+        getShapeLock(): IBaseShapeLock;
 
         /**
-         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
          */
-        getY(): number;
+        getBlackWhiteMode(): number;
+
+        /**
+         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setWidth(arg1: number): void;
 
         /**
          * Returns a basic placeholder shape (shape from the layout and/or master slide that the current shape is inherited from). A null is returned if the current shape is not inherited.
@@ -26630,9 +26420,79 @@ declare module "aspose.slides.via.java" {
         getBasePlaceholder(): IShape;
 
         /**
-         * Returns shape's locks. Read-only IGraphicalObjectLock.
+         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
          */
-        getGraphicalObjectLock(): IGraphicalObjectLock;
+        setRawFrame(arg1: IShapeFrame): void;
+
+        /**
+         * Returns the LineFormat object that contains line formatting properties for a shape. Read-only ILineFormat.
+         */
+        getLineFormat(): ILineFormat;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         */
+        setHyperlinkMouseOver(arg1: IHyperlink): void;
+
+        /**
+         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getY(): number;
+
+        /**
+         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         */
+        setFrame(arg1: IShapeFrame): void;
+
+        /**
+         * Returns or sets the title of alternative text associated with a shape. Read/write String.
+         */
+        setAlternativeTextTitle(arg1: string): void;
+
+        /**
+         * Saves content of Shape as SVG file.
+         */
+        writeAsSvg(arg1: java.io.OutputStream): void;
+
+        /**
+         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setY(arg1: number): void;
+
+        /**
+         * Returns or sets the alternative text associated with a shape. Read/write String.
+         */
+        setAlternativeText(arg1: string): void;
+
+        /**
+         * Returns or sets the title of alternative text associated with a shape. Read/write String.
+         */
+        getAlternativeTextTitle(): string;
+
+        /**
+         * Hyperlinks manager Read-only IHyperlinkManager.
+         */
+        getHyperlinkManager(): IHyperlinkManager;
+
+        /**
+         * Saves content of Shape as SVG file.
+         */
+        writeAsSvg(arg1: java.io.OutputStream, arg2: ISVGOptions): void;
+
+        /**
+         * Returns shape thumbnail.
+         */
+        getImage(): IImage;
+
+        /**
+         * Returns the EffectFormat object which contains pixel effects applied to a shape. Read-only IEffectFormat.
+         */
+        getEffectFormat(): IEffectFormat;
+
+        /**
+         * Gets or sets 'Mark as decorative' option Reed/write boolean.
+         */
+        setDecorative(arg1: boolean): void;
 
         /**
          * Returns shape thumbnail.
@@ -26640,9 +26500,84 @@ declare module "aspose.slides.via.java" {
         getImage(arg1: number, arg2: number, arg3: number): IImage;
 
         /**
-         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
+         * Returns the position of a shape in the z-order. Shapes[0] returns the shape at the back of the z-order, and Shapes[Shapes.Count - 1] returns the shape at the front of the z-order. Read-only int.
          */
-        setRotation(arg1: number): void;
+        getZOrderPosition(): number;
+
+        /**
+         * Returns or sets the name of a shape. Read/write String.
+         */
+        getName(): string;
+
+        /**
+         * Returns a slide-scoped unique identifier that remains constant for the lifetime of the shape and lets PowerPoint or interop code reliably reference the shape from anywhere in the document. Read-only long. See also getUniqueId().
+         */
+        getOfficeInteropShapeId(): number;
+
+        /**
+         * Returns shape's locks. Read-only IGraphicalObjectLock.
+         */
+        getGraphicalObjectLock(): IGraphicalObjectLock;
+
+        /**
+         * Gets or sets 'Mark as decorative' option Reed/write boolean.
+         */
+        isDecorative(): boolean;
+
+        /**
+         * Returns an internal, presentation-scoped identifier intended for use by add-ins or other code. Because this value can be reassigned by the user or programmatically, it must not be treated as a persistent unique key. Read-only long. See also getOfficeInteropShapeId().
+         */
+        getUniqueId(): number;
+
+        /**
+         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
+         */
+        setBlackWhiteMode(arg1: number): void;
+
+        /**
+         * Returns the FillFormat object that contains fill formatting properties for a shape. Read-only IFillFormat.
+         */
+        getFillFormat(): IFillFormat;
+
+        /**
+         * Returns the shape's custom data. Read-only ICustomData.
+         */
+        getCustomData(): ICustomData;
+
+        /**
+         * Determines whether the shape is TextHolder. Read-only boolean.
+         */
+        isTextHolder(): boolean;
+
+        /**
+         * Adds a new placeholder if there is no and sets placeholder properties to a specified one.
+         */
+        addPlaceholder(arg1: IPlaceholder): IPlaceholder;
+
+        /**
+         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getHeight(): number;
+
+        /**
+         * Returns parent GroupShape object if shape is grouped. Otherwise returns null. Read-only IGroupShape. Property isGrouped() determines whether the shape is grouped.
+         */
+        getParentGroup(): IGroupShape;
+
+        /**
+         * Returns or sets the name of a shape. Read/write String.
+         */
+        setName(arg1: string): void;
+
+        /**
+         * Determines whether the shape is hidden. Read/write boolean.
+         */
+        getHidden(): boolean;
+
+        /**
+         * Determines whether the shape is grouped. Read-only boolean. Property getParentGroup() returns parent GroupShape object if shape is grouped.
+         */
+        isGrouped(): boolean;
 
         /**
          * Returns the number of connection sites on the shape. Read-only int.
@@ -26650,9 +26585,74 @@ declare module "aspose.slides.via.java" {
         getConnectionSiteCount(): number;
 
         /**
+         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
+         */
+        getHyperlinkClick(): IHyperlink;
+
+        /**
+         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
+         */
+        getRotation(): number;
+
+        /**
          * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
          */
-        getHeight(): number;
+        setHeight(arg1: number): void;
+
+        /**
+         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         */
+        getFrame(): IShapeFrame;
+
+        /**
+         * Returns the ThreeDFormat object that contains line formatting properties for a shape. Read-only IThreeDFormat.
+         */
+        getThreeDFormat(): IThreeDFormat;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         */
+        getHyperlinkMouseOver(): IHyperlink;
+
+        /**
+         * Returns the presentation. Read-only IPresentation.
+         */
+        getPresentation(): IPresentation;
+
+        /**
+         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getWidth(): number;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
+         */
+        setHyperlinkClick(arg1: IHyperlink): void;
+
+        /**
+         * Returns the placeholder for a shape. Read-only IPlaceholder.
+         */
+        getPlaceholder(): IPlaceholder;
+
+        /**
+         * Determines whether the shape is hidden. Read/write boolean.
+         */
+        setHidden(arg1: boolean): void;
+
+        /**
+         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setX(arg1: number): void;
+
+        /**
+         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
+         */
+        setRotation(arg1: number): void;
+
+        /**
+         * Returns or sets the alternative text associated with a shape. Read/write String.
+         */
+        getAlternativeText(): string;
 
     }
 
@@ -26676,14 +26676,14 @@ declare module "aspose.slides.via.java" {
         getTextFrame(): ITextFrame;
 
         /**
+         * Returns shape's style object. Read-only IShapeStyle.
+         */
+        getShapeStyle(): IShapeStyle;
+
+        /**
          * Creates and returns array of shape's elements.
          */
         createShapeElements(): IShapeElement[];
-
-        /**
-         * Updates shape geometry from array of IGeometryPath. Coordinates must be relative to the left top corner of the shape. Changes the type of the shape (ShapeType(getShapeType()/setShapeType(int))) to ShapeType.Custom.
-         */
-        setGeometryPaths(arg1: IGeometryPath[]): void;
 
         /**
          * Updates shape geometry from IGeometryPath object. Coordinates must be relative to the left top corner of the shape. Changes the type of the shape (ShapeType(getShapeType()/setShapeType(int))) to ShapeType.Custom.
@@ -26691,9 +26691,9 @@ declare module "aspose.slides.via.java" {
         setGeometryPath(arg1: IGeometryPath): void;
 
         /**
-         * Returns shape's style object. Read-only IShapeStyle.
+         * Returns the copy of path of the geometry shape. Coordinates are relative to the left top corner of the shape.
          */
-        getShapeStyle(): IShapeStyle;
+        getGeometryPaths(): IGeometryPath[];
 
         /**
          * Returns a collection of shape's adjustment values. Read-only IAdjustValueCollection.
@@ -26701,44 +26701,9 @@ declare module "aspose.slides.via.java" {
         getAdjustments(): IAdjustValueCollection;
 
         /**
-         * Returns the copy of path of the geometry shape. Coordinates are relative to the left top corner of the shape.
+         * Updates shape geometry from array of IGeometryPath. Coordinates must be relative to the left top corner of the shape. Changes the type of the shape (ShapeType(getShapeType()/setShapeType(int))) to ShapeType.Custom.
          */
-        getGeometryPaths(): IGeometryPath[];
-
-        /**
-         * Adds a new placeholder if there is no and sets placeholder properties to a specified one.
-         */
-        addPlaceholder(arg1: IPlaceholder): IPlaceholder;
-
-        /**
-         * Returns or sets the alternative text associated with a shape. Read/write String.
-         */
-        setAlternativeText(arg1: string): void;
-
-        /**
-         * Returns the base slide. Read-only IBaseSlide.
-         */
-        getSlide(): IBaseSlide;
-
-        /**
-         * Saves content of Shape as SVG file.
-         */
-        writeAsSvg(arg1: java.io.OutputStream, arg2: ISVGOptions): void;
-
-        /**
-         * Returns the position of a shape in the z-order. Shapes[0] returns the shape at the back of the z-order, and Shapes[Shapes.Count - 1] returns the shape at the front of the z-order. Read-only int.
-         */
-        getZOrderPosition(): number;
-
-        /**
-         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
-         */
-        setRotation(arg1: number): void;
-
-        /**
-         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getWidth(): number;
+        setGeometryPaths(arg1: IGeometryPath[]): void;
 
         /**
          * Returns the shape's custom data. Read-only ICustomData.
@@ -26746,44 +26711,9 @@ declare module "aspose.slides.via.java" {
         getCustomData(): ICustomData;
 
         /**
-         * Returns the placeholder for a shape. Read-only IPlaceholder.
+         * Returns or sets the title of alternative text associated with a shape. Read/write String.
          */
-        getPlaceholder(): IPlaceholder;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
-         */
-        setHyperlinkClick(arg1: IHyperlink): void;
-
-        /**
-         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
-         */
-        getBlackWhiteMode(): number;
-
-        /**
-         * Determines whether the shape is grouped. Read-only boolean. Property getParentGroup() returns parent GroupShape object if shape is grouped.
-         */
-        isGrouped(): boolean;
-
-        /**
-         * Saves content of Shape as SVG file.
-         */
-        writeAsSvg(arg1: java.io.OutputStream): void;
-
-        /**
-         * Returns the EffectFormat object which contains pixel effects applied to a shape. Read-only IEffectFormat.
-         */
-        getEffectFormat(): IEffectFormat;
-
-        /**
-         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
-         */
-        getRawFrame(): IShapeFrame;
-
-        /**
-         * Returns the ThreeDFormat object that contains line formatting properties for a shape. Read-only IThreeDFormat.
-         */
-        getThreeDFormat(): IThreeDFormat;
+        setAlternativeTextTitle(arg1: string): void;
 
         /**
          * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
@@ -26791,84 +26721,9 @@ declare module "aspose.slides.via.java" {
         getHyperlinkClick(): IHyperlink;
 
         /**
-         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
          */
-        getY(): number;
-
-        /**
-         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        getX(): number;
-
-        /**
-         * Returns the LineFormat object that contains line formatting properties for a shape. Read-only ILineFormat.
-         */
-        getLineFormat(): ILineFormat;
-
-        /**
-         * Returns a basic placeholder shape (shape from the layout and/or master slide that the current shape is inherited from). A null is returned if the current shape is not inherited.
-         */
-        getBasePlaceholder(): IShape;
-
-        /**
-         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
-         */
-        setFrame(arg1: IShapeFrame): void;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
-         */
-        setHyperlinkMouseOver(arg1: IHyperlink): void;
-
-        /**
-         * Returns shape thumbnail.
-         */
-        getImage(arg1: number, arg2: number, arg3: number): IImage;
-
-        /**
-         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
-         */
-        setRawFrame(arg1: IShapeFrame): void;
-
-        /**
-         * Returns the FillFormat object that contains fill formatting properties for a shape. Read-only IFillFormat.
-         */
-        getFillFormat(): IFillFormat;
-
-        /**
-         * Returns the number of connection sites on the shape. Read-only int.
-         */
-        getConnectionSiteCount(): number;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
-         */
-        getHyperlinkMouseOver(): IHyperlink;
-
-        /**
-         * Returns or sets the title of alternative text associated with a shape. Read/write String.
-         */
-        getAlternativeTextTitle(): string;
-
-        /**
-         * Returns or sets the title of alternative text associated with a shape. Read/write String.
-         */
-        setAlternativeTextTitle(arg1: string): void;
-
-        /**
-         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setHeight(arg1: number): void;
-
-        /**
-         * Returns shape's locks. Read-only IBaseShapeLock.
-         */
-        getShapeLock(): IBaseShapeLock;
-
-        /**
-         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
-         */
-        getFrame(): IShapeFrame;
+        getRotation(): number;
 
         /**
          * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
@@ -26876,24 +26731,14 @@ declare module "aspose.slides.via.java" {
         setX(arg1: number): void;
 
         /**
-         * Returns or sets the name of a shape. Read/write String.
-         */
-        setName(arg1: string): void;
-
-        /**
          * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
          */
         getHeight(): number;
 
         /**
-         * Gets or sets 'Mark as decorative' option Reed/write boolean.
+         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
          */
-        setDecorative(arg1: boolean): void;
-
-        /**
-         * Returns the presentation. Read-only IPresentation.
-         */
-        getPresentation(): IPresentation;
+        setRawFrame(arg1: IShapeFrame): void;
 
         /**
          * Defines that this shape isn't a placeholder.
@@ -26901,9 +26746,94 @@ declare module "aspose.slides.via.java" {
         removePlaceholder(): void;
 
         /**
-         * Returns or sets the name of a shape. Read/write String.
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
          */
-        getName(): string;
+        setHyperlinkMouseOver(arg1: IHyperlink): void;
+
+        /**
+         * Returns parent GroupShape object if shape is grouped. Otherwise returns null. Read-only IGroupShape. Property isGrouped() determines whether the shape is grouped.
+         */
+        getParentGroup(): IGroupShape;
+
+        /**
+         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
+         */
+        setBlackWhiteMode(arg1: number): void;
+
+        /**
+         * Returns a basic placeholder shape (shape from the layout and/or master slide that the current shape is inherited from). A null is returned if the current shape is not inherited.
+         */
+        getBasePlaceholder(): IShape;
+
+        /**
+         * Returns shape thumbnail.
+         */
+        getImage(): IImage;
+
+        /**
+         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         */
+        getFrame(): IShapeFrame;
+
+        /**
+         * Returns the FillFormat object that contains fill formatting properties for a shape. Read-only IFillFormat.
+         */
+        getFillFormat(): IFillFormat;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         */
+        getHyperlinkMouseOver(): IHyperlink;
+
+        /**
+         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getWidth(): number;
+
+        /**
+         * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getY(): number;
+
+        /**
+         * Returns the EffectFormat object which contains pixel effects applied to a shape. Read-only IEffectFormat.
+         */
+        getEffectFormat(): IEffectFormat;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
+         */
+        setHyperlinkClick(arg1: IHyperlink): void;
+
+        /**
+         * Returns the ThreeDFormat object that contains line formatting properties for a shape. Read-only IThreeDFormat.
+         */
+        getThreeDFormat(): IThreeDFormat;
+
+        /**
+         * Returns the base slide. Read-only IBaseSlide.
+         */
+        getSlide(): IBaseSlide;
+
+        /**
+         * Determines whether the shape is hidden. Read/write boolean.
+         */
+        setHidden(arg1: boolean): void;
+
+        /**
+         * Returns or sets the shape frame's properties. Read/write IShapeFrame. Value of each property of the returned IShapeFrame instance is not undefined (is not NaN or NotDefined). Value of each property of the assigned IShapeFrame instance must be not undefined (must be not NaN or NotDefined). You can set undefined values for RawFrame instance properties.
+         */
+        setFrame(arg1: IShapeFrame): void;
+
+        /**
+         * Returns shape thumbnail.
+         */
+        getImage(arg1: number, arg2: number, arg3: number): IImage;
+
+        /**
+         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
+         */
+        setRotation(arg1: number): void;
 
         /**
          * Hyperlinks manager Read-only IHyperlinkManager.
@@ -26911,9 +26841,34 @@ declare module "aspose.slides.via.java" {
         getHyperlinkManager(): IHyperlinkManager;
 
         /**
-         * Returns or sets the number of degrees the specified shape is rotated around the z-axis. A positive value indicates clockwise rotation; a negative value indicates counterclockwise rotation. Read/write float. Returned value is always defined (is not Float.NaN). Assigned value must be defined (not Float.NaN). You can set undefined values for RawFrame instance properties.
+         * Returns or sets the name of a shape. Read/write String.
          */
-        getRotation(): number;
+        getName(): string;
+
+        /**
+         * Returns or sets the name of a shape. Read/write String.
+         */
+        setName(arg1: string): void;
+
+        /**
+         * Returns or sets the alternative text associated with a shape. Read/write String.
+         */
+        setAlternativeText(arg1: string): void;
+
+        /**
+         * Returns a slide-scoped unique identifier that remains constant for the lifetime of the shape and lets PowerPoint or interop code reliably reference the shape from anywhere in the document. Read-only long. See also getUniqueId().
+         */
+        getOfficeInteropShapeId(): number;
+
+        /**
+         * Returns the placeholder for a shape. Read-only IPlaceholder.
+         */
+        getPlaceholder(): IPlaceholder;
+
+        /**
+         * Returns the LineFormat object that contains line formatting properties for a shape. Read-only ILineFormat.
+         */
+        getLineFormat(): ILineFormat;
 
         /**
          * Gets or sets the y-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
@@ -26923,22 +26878,7 @@ declare module "aspose.slides.via.java" {
         /**
          * Gets or sets 'Mark as decorative' option Reed/write boolean.
          */
-        isDecorative(): boolean;
-
-        /**
-         * Returns an internal, presentation-scoped identifier intended for use by add-ins or other code. Because this value can be reassigned by the user or programmatically, it must not be treated as a persistent unique key. Read-only long. See also getOfficeInteropShapeId().
-         */
-        getUniqueId(): number;
-
-        /**
-         * Returns a slide-scoped unique identifier that remains constant for the lifetime of the shape and lets PowerPoint or interop code reliably reference the shape from anywhere in the document. Read-only long. See also getUniqueId().
-         */
-        getOfficeInteropShapeId(): number;
-
-        /**
-         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
-         */
-        setWidth(arg1: number): void;
+        setDecorative(arg1: boolean): void;
 
         /**
          * Returns or sets the alternative text associated with a shape. Read/write String.
@@ -26946,34 +26886,94 @@ declare module "aspose.slides.via.java" {
         getAlternativeText(): string;
 
         /**
-         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
-         */
-        setBlackWhiteMode(arg1: number): void;
-
-        /**
          * Determines whether the shape is TextHolder. Read-only boolean.
          */
         isTextHolder(): boolean;
 
         /**
+         * Returns an internal, presentation-scoped identifier intended for use by add-ins or other code. Because this value can be reassigned by the user or programmatically, it must not be treated as a persistent unique key. Read-only long. See also getOfficeInteropShapeId().
+         */
+        getUniqueId(): number;
+
+        /**
+         * Returns or sets the raw shape frame's properties. Read/write IShapeFrame.
+         */
+        getRawFrame(): IShapeFrame;
+
+        /**
+         * Gets or sets 'Mark as decorative' option Reed/write boolean.
+         */
+        isDecorative(): boolean;
+
+        /**
+         * Returns the presentation. Read-only IPresentation.
+         */
+        getPresentation(): IPresentation;
+
+        /**
+         * Gets or sets the x-coordinate of the shape's upper-left corner, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        getX(): number;
+
+        /**
+         * Gets or sets the width of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setWidth(arg1: number): void;
+
+        /**
+         * Returns shape's locks. Read-only IBaseShapeLock.
+         */
+        getShapeLock(): IBaseShapeLock;
+
+        /**
+         * Determines whether the shape is grouped. Read-only boolean. Property getParentGroup() returns parent GroupShape object if shape is grouped.
+         */
+        isGrouped(): boolean;
+
+        /**
+         * Property specifies how a shape will render in black-and-white display mode.. Read/write BlackWhiteMode.
+         */
+        getBlackWhiteMode(): number;
+
+        /**
+         * Gets or sets the height of the shape, measured in points. Read/write float. The value returned is always defined and never Float.NaN. The value assigned must also be defined; assign Float.NaN only to properties of a RawFrame instance.
+         */
+        setHeight(arg1: number): void;
+
+        /**
+         * Returns or sets the title of alternative text associated with a shape. Read/write String.
+         */
+        getAlternativeTextTitle(): string;
+
+        /**
+         * Saves content of Shape as SVG file.
+         */
+        writeAsSvg(arg1: java.io.OutputStream): void;
+
+        /**
+         * Adds a new placeholder if there is no and sets placeholder properties to a specified one.
+         */
+        addPlaceholder(arg1: IPlaceholder): IPlaceholder;
+
+        /**
+         * Returns the position of a shape in the z-order. Shapes[0] returns the shape at the back of the z-order, and Shapes[Shapes.Count - 1] returns the shape at the front of the z-order. Read-only int.
+         */
+        getZOrderPosition(): number;
+
+        /**
+         * Returns the number of connection sites on the shape. Read-only int.
+         */
+        getConnectionSiteCount(): number;
+
+        /**
+         * Saves content of Shape as SVG file.
+         */
+        writeAsSvg(arg1: java.io.OutputStream, arg2: ISVGOptions): void;
+
+        /**
          * Determines whether the shape is hidden. Read/write boolean.
          */
         getHidden(): boolean;
-
-        /**
-         * Determines whether the shape is hidden. Read/write boolean.
-         */
-        setHidden(arg1: boolean): void;
-
-        /**
-         * Returns parent GroupShape object if shape is grouped. Otherwise returns null. Read-only IGroupShape. Property isGrouped() determines whether the shape is grouped.
-         */
-        getParentGroup(): IGroupShape;
-
-        /**
-         * Returns shape thumbnail.
-         */
-        getImage(): IImage;
 
     }
 
@@ -27166,6 +27166,21 @@ declare module "aspose.slides.via.java" {
         iterator(): IGenericEnumerator;
 
         /**
+         * @returns number
+         */
+        size(): number;
+
+        /**
+         * @returns IEnumerator
+         */
+        iterator(): IEnumerator;
+
+        /**
+         * @returns IGenericEnumerator
+         */
+        iteratorJava(): IGenericEnumerator;
+
+        /**
          * @returns boolean
          */
         isSynchronized(): boolean;
@@ -27174,21 +27189,6 @@ declare module "aspose.slides.via.java" {
          * @returns java.lang.Object
          */
         getSyncRoot(): java.lang.Object;
-
-        /**
-         * @returns IEnumerator
-         */
-        iterator(): IEnumerator;
-
-        /**
-         * @returns number
-         */
-        size(): number;
-
-        /**
-         * @returns IGenericEnumerator
-         */
-        iteratorJava(): IGenericEnumerator;
 
     }
 
@@ -27202,34 +27202,9 @@ declare module "aspose.slides.via.java" {
         getVersion(): number;
 
         /**
-         * Returns the LineFormat properties for text outlining. No inheritance applied. Read-only ILineFormat.
+         * Returns the text EffectFormat properties. No inheritance applied. Read-only IEffectFormat.
          */
-        getLineFormat(): ILineFormat;
-
-        /**
-         * Returns the underline line FillFormat properties. No inheritance applied. Read-only IFillFormat.
-         */
-        getUnderlineFillFormat(): IFillFormat;
-
-        /**
-         * Returns or sets the intercharacter spacing increment. Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
-         */
-        getSpacing(): number;
-
-        /**
-         * Determines whether the numbers should ignore text eastern language-specific vertical text layout. No inheritance applied. Read/write NullableBool.
-         */
-        getKumimoji(): number;
-
-        /**
-         * Determines whether the text shouldn't be proofed. No inheritance applied. Read/write NullableBool.
-         */
-        getProofDisabled(): number;
-
-        /**
-         * Returns or sets the complex script font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
-         */
-        setComplexScriptFont(arg1: IFontData): void;
+        getEffectFormat(): IEffectFormat;
 
         /**
          * Determines whether the font is bold. No inheritance applied. Read/write NullableBool.
@@ -27239,12 +27214,97 @@ declare module "aspose.slides.via.java" {
         /**
          * Gets or sets a value indicating whether spell checking is enabled for the text portion. When this property is set to false, spelling checks for text elements are suppressed. When set to true, spell checking is allowed. Default value is false.
          */
-        setSpellCheck(arg1: boolean): void;
+        getSpellCheck(): boolean;
 
         /**
-         * Returns the LineFormat properties used to outline underline line. No inheritance applied. Read-only ILineFormat.
+         * Determines whether the height of a text should be normalized. No inheritance applied. Read/write NullableBool.
          */
-        getUnderlineLineFormat(): ILineFormat;
+        getNormaliseHeight(): number;
+
+        /**
+         * Returns or sets the text underline type. No inheritance applied. Read/write TextUnderlineType.
+         */
+        getFontUnderline(): number;
+
+        /**
+         * Returns or sets the symbolic font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         */
+        setSymbolFont(arg1: IFontData): void;
+
+        /**
+         * Determines whether the font is itallic. No inheritance applied. Read/write NullableBool.
+         */
+        setFontItalic(arg1: number): void;
+
+        /**
+         * Determines whether the font is bold. No inheritance applied. Read/write NullableBool.
+         */
+        getFontBold(): number;
+
+        /**
+         * Returns or sets the Id of a proofing language. Used for checking spelling and grammar. Read/write String.
+         */
+        getLanguageId(): string;
+
+        /**
+         * Returns or sets the symbolic font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         */
+        getSymbolFont(): IFontData;
+
+        /**
+         * Returns or sets the intercharacter spacing increment. Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
+         */
+        setSpacing(arg1: number): void;
+
+        /**
+         * Returns or sets the intercharacter spacing increment. Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
+         */
+        getSpacing(): number;
+
+        /**
+         * Determines whether the underline style has own FillFormat properties or inherits it from the FillFormat properties of the text. Read/write NullableBool.
+         */
+        setHardUnderlineFill(arg1: number): void;
+
+        /**
+         * Returns or sets the Id of an alternative language. Read/write String.
+         */
+        getAlternativeLanguageId(): string;
+
+        /**
+         * Returns or sets the Latin font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         */
+        getLatinFont(): IFontData;
+
+        /**
+         * Returns the LineFormat properties for text outlining. No inheritance applied. Read-only ILineFormat.
+         */
+        getLineFormat(): ILineFormat;
+
+        /**
+         * Determines whether the text shouldn't be proofed. No inheritance applied. Read/write NullableBool.
+         */
+        getProofDisabled(): number;
+
+        /**
+         * Determines whether the underline style has own FillFormat properties or inherits it from the FillFormat properties of the text. Read/write NullableBool.
+         */
+        isHardUnderlineFill(): number;
+
+        /**
+         * Returns or sets the type of text capitalization. No inheritance applied. Read/write TextCapType.
+         */
+        setTextCapType(arg1: number): void;
+
+        /**
+         * Returns or sets the text underline type. No inheritance applied. Read/write TextUnderlineType.
+         */
+        setFontUnderline(arg1: number): void;
+
+        /**
+         * Returns or sets the complex script font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         */
+        setComplexScriptFont(arg1: IFontData): void;
 
         /**
          * Returns or sets the minimal font size, for which kerning should be switched on. Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
@@ -27252,9 +27312,29 @@ declare module "aspose.slides.via.java" {
         getKerningMinimalSize(): number;
 
         /**
-         * Returns or sets the complex script font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         * Returns or sets the strikethrough type of a text. No inheritance applied. Read/write TextStrikethroughType.
          */
-        getComplexScriptFont(): IFontData;
+        setStrikethroughType(arg1: number): void;
+
+        /**
+         * Returns or sets the East Asian font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         */
+        getEastAsianFont(): IFontData;
+
+        /**
+         * Returns the text FillFormat properties. No inheritance applied. Read-only IFillFormat.
+         */
+        getFillFormat(): IFillFormat;
+
+        /**
+         * Determines whether the height of a text should be normalized. No inheritance applied. Read/write NullableBool.
+         */
+        setNormaliseHeight(arg1: number): void;
+
+        /**
+         * Returns the color used to highlight a text. No inheritance applied. Read-only IColorFormat.
+         */
+        getHighlightColor(): IColorFormat;
 
         /**
          * Returns or sets the Id of an alternative language. Read/write String.
@@ -27262,9 +27342,39 @@ declare module "aspose.slides.via.java" {
         setAlternativeLanguageId(arg1: string): void;
 
         /**
-         * Returns or sets the Id of an alternative language. Read/write String.
+         * Returns the underline line FillFormat properties. No inheritance applied. Read-only IFillFormat.
          */
-        getAlternativeLanguageId(): string;
+        getUnderlineFillFormat(): IFillFormat;
+
+        /**
+         * Determines whether the font is itallic. No inheritance applied. Read/write NullableBool.
+         */
+        getFontItalic(): number;
+
+        /**
+         * Returns or sets the superscript or subscript text. Value from -100% (subscript) to 100% (superscript). Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
+         */
+        getEscapement(): number;
+
+        /**
+         * Determines whether the numbers should ignore text eastern language-specific vertical text layout. No inheritance applied. Read/write NullableBool.
+         */
+        setKumimoji(arg1: number): void;
+
+        /**
+         * Returns or sets the strikethrough type of a text. No inheritance applied. Read/write TextStrikethroughType.
+         */
+        getStrikethroughType(): number;
+
+        /**
+         * Returns or sets the superscript or subscript text. Value from -100% (subscript) to 100% (superscript). Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
+         */
+        setEscapement(arg1: number): void;
+
+        /**
+         * Returns or sets the type of text capitalization. No inheritance applied. Read/write TextCapType.
+         */
+        getTextCapType(): number;
 
         /**
          * Determines whether the underline style has own LineFormat properties or inherits it from the LineFormat properties of the text. Read/write NullableBool.
@@ -27274,107 +27384,12 @@ declare module "aspose.slides.via.java" {
         /**
          * Returns or sets the Id of a proofing language. Used for checking spelling and grammar. Read/write String.
          */
-        getLanguageId(): string;
-
-        /**
-         * Returns or sets the font height of a portion. Float.NaN means height is undefined and should be inherited from the Master. Read/write float.
-         */
-        getFontHeight(): number;
-
-        /**
-         * Determines whether the height of a text should be normalized. No inheritance applied. Read/write NullableBool.
-         */
-        getNormaliseHeight(): number;
-
-        /**
-         * Determines whether the underline style has own LineFormat properties or inherits it from the LineFormat properties of the text. Read/write NullableBool.
-         */
-        isHardUnderlineLine(): number;
-
-        /**
-         * Returns or sets the text underline type. No inheritance applied. Read/write TextUnderlineType.
-         */
-        setFontUnderline(arg1: number): void;
-
-        /**
-         * Determines whether the text shouldn't be proofed. No inheritance applied. Read/write NullableBool.
-         */
-        setProofDisabled(arg1: number): void;
-
-        /**
-         * Returns or sets the East Asian font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
-         */
-        setEastAsianFont(arg1: IFontData): void;
-
-        /**
-         * Returns or sets the superscript or subscript text. Value from -100% (subscript) to 100% (superscript). Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
-         */
-        getEscapement(): number;
-
-        /**
-         * Returns or sets the type of text capitalization. No inheritance applied. Read/write TextCapType.
-         */
-        setTextCapType(arg1: number): void;
-
-        /**
-         * Returns or sets the Latin font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
-         */
-        getLatinFont(): IFontData;
-
-        /**
-         * Determines whether the numbers should ignore text eastern language-specific vertical text layout. No inheritance applied. Read/write NullableBool.
-         */
-        setKumimoji(arg1: number): void;
-
-        /**
-         * Returns the text FillFormat properties. No inheritance applied. Read-only IFillFormat.
-         */
-        getFillFormat(): IFillFormat;
-
-        /**
-         * Returns or sets the Id of a proofing language. Used for checking spelling and grammar. Read/write String.
-         */
         setLanguageId(arg1: string): void;
 
         /**
-         * Returns the color used to highlight a text. No inheritance applied. Read-only IColorFormat.
+         * Gets or sets a value indicating whether spell checking is enabled for the text portion. When this property is set to false, spelling checks for text elements are suppressed. When set to true, spell checking is allowed. Default value is false.
          */
-        getHighlightColor(): IColorFormat;
-
-        /**
-         * Determines whether the font is bold. No inheritance applied. Read/write NullableBool.
-         */
-        getFontBold(): number;
-
-        /**
-         * Returns or sets the symbolic font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
-         */
-        getSymbolFont(): IFontData;
-
-        /**
-         * Determines whether the font is itallic. No inheritance applied. Read/write NullableBool.
-         */
-        setFontItalic(arg1: number): void;
-
-        /**
-         * Returns or sets the type of text capitalization. No inheritance applied. Read/write TextCapType.
-         */
-        getTextCapType(): number;
-
-        /**
-         * Returns or sets the symbolic font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
-         */
-        setSymbolFont(arg1: IFontData): void;
-
-        /**
-         * Returns or sets the text underline type. No inheritance applied. Read/write TextUnderlineType.
-         */
-        getFontUnderline(): number;
-
-        /**
-         * Returns or sets the strikethrough type of a text. No inheritance applied. Read/write TextStrikethroughType.
-         */
-        setStrikethroughType(arg1: number): void;
+        setSpellCheck(arg1: boolean): void;
 
         /**
          * Returns or sets the minimal font size, for which kerning should be switched on. Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
@@ -27382,64 +27397,49 @@ declare module "aspose.slides.via.java" {
         setKerningMinimalSize(arg1: number): void;
 
         /**
-         * Returns or sets the intercharacter spacing increment. Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
+         * Returns the LineFormat properties used to outline underline line. No inheritance applied. Read-only ILineFormat.
          */
-        setSpacing(arg1: number): void;
-
-        /**
-         * Returns or sets the superscript or subscript text. Value from -100% (subscript) to 100% (superscript). Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
-         */
-        setEscapement(arg1: number): void;
-
-        /**
-         * Returns the text EffectFormat properties. No inheritance applied. Read-only IEffectFormat.
-         */
-        getEffectFormat(): IEffectFormat;
-
-        /**
-         * Returns or sets the Latin font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
-         */
-        setLatinFont(arg1: IFontData): void;
-
-        /**
-         * Determines whether the underline style has own FillFormat properties or inherits it from the FillFormat properties of the text. Read/write NullableBool.
-         */
-        setHardUnderlineFill(arg1: number): void;
-
-        /**
-         * Determines whether the underline style has own FillFormat properties or inherits it from the FillFormat properties of the text. Read/write NullableBool.
-         */
-        isHardUnderlineFill(): number;
-
-        /**
-         * Returns or sets the strikethrough type of a text. No inheritance applied. Read/write TextStrikethroughType.
-         */
-        getStrikethroughType(): number;
-
-        /**
-         * Determines whether the font is itallic. No inheritance applied. Read/write NullableBool.
-         */
-        getFontItalic(): number;
-
-        /**
-         * Gets or sets a value indicating whether spell checking is enabled for the text portion. When this property is set to false, spelling checks for text elements are suppressed. When set to true, spell checking is allowed. Default value is false.
-         */
-        getSpellCheck(): boolean;
-
-        /**
-         * Determines whether the height of a text should be normalized. No inheritance applied. Read/write NullableBool.
-         */
-        setNormaliseHeight(arg1: number): void;
+        getUnderlineLineFormat(): ILineFormat;
 
         /**
          * Returns or sets the East Asian font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
          */
-        getEastAsianFont(): IFontData;
+        setEastAsianFont(arg1: IFontData): void;
 
         /**
          * Returns or sets the font height of a portion. Float.NaN means height is undefined and should be inherited from the Master. Read/write float.
          */
         setFontHeight(arg1: number): void;
+
+        /**
+         * Returns or sets the font height of a portion. Float.NaN means height is undefined and should be inherited from the Master. Read/write float.
+         */
+        getFontHeight(): number;
+
+        /**
+         * Determines whether the underline style has own LineFormat properties or inherits it from the LineFormat properties of the text. Read/write NullableBool.
+         */
+        isHardUnderlineLine(): number;
+
+        /**
+         * Determines whether the numbers should ignore text eastern language-specific vertical text layout. No inheritance applied. Read/write NullableBool.
+         */
+        getKumimoji(): number;
+
+        /**
+         * Determines whether the text shouldn't be proofed. No inheritance applied. Read/write NullableBool.
+         */
+        setProofDisabled(arg1: number): void;
+
+        /**
+         * Returns or sets the complex script font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         */
+        getComplexScriptFont(): IFontData;
+
+        /**
+         * Returns or sets the Latin font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         */
+        setLatinFont(arg1: IFontData): void;
 
     }
 
@@ -27479,199 +27479,9 @@ declare module "aspose.slides.via.java" {
         getSuperscript(): IMathElement;
 
         /**
-         * Encloses this element in specified characters such as parenthesis or another characters as framing
-         */
-        enclose(): IMathDelimiter;
-
-        /**
-         * Creates subscript
-         */
-        setSubscript(arg1: IMathElement): IMathSubscriptElement;
-
-        /**
-         * Places this element in a group using a grouping character such as bottom curly bracket or another
-         */
-        group(arg1: string, arg2: number, arg3: number): IMathGroupingCharacter;
-
-        /**
-         * Takes lower limit
-         */
-        setLowerLimit(arg1: string): IMathLimit;
-
-        /**
-         * Specifies the mathematical root of the given degree from the specified argument.
-         */
-        radical(arg1: string): IMathRadical;
-
-        /**
-         * Creates subscript and superscript on the right
-         */
-        setSubSuperscriptOnTheRight(arg1: string, arg2: string): IMathRightSubSuperscriptElement;
-
-        /**
-         * Takes specified function using this instance as the argument and specified additional argument
-         */
-        asArgumentOfFunction(arg1: IMathElement): IMathFunction;
-
-        /**
-         * Places this element in a non-visual box (logical grouping) which is used to group components of an equation or other instance of mathematical text. A boxed object can (for example) serve as an operator emulator with or without an alignment point, serve as a line break point, or be grouped such as not to allow line breaks within.
-         */
-        toBox(): IMathBox;
-
-        /**
-         * Takes the integral
-         */
-        integral(arg1: number, arg2: string, arg3: string): IMathNaryOperator;
-
-        /**
-         * Takes the integral
-         */
-        integral(arg1: number): IMathNaryOperator;
-
-        /**
-         * Joins a mathematical text and forms a mathematical block
-         */
-        join(arg1: string): IMathBlock;
-
-        /**
-         * Creates subscript and superscript on the right
-         */
-        setSubSuperscriptOnTheRight(arg1: IMathElement, arg2: IMathElement): IMathRightSubSuperscriptElement;
-
-        /**
-         * Creates subscript
-         */
-        setSubscript(arg1: string): IMathSubscriptElement;
-
-        /**
-         * Places this element in a border-box
-         */
-        toBorderBox(): IMathBorderBox;
-
-        /**
          * Takes a function of an argument using this instance as the function name
          */
         function(arg1: IMathElement): IMathFunction;
-
-        /**
-         * Takes specified function using this instance as the argument and specified additional argument
-         */
-        asArgumentOfFunction(arg1: string): IMathFunction;
-
-        /**
-         * Sets a bar on the bottom of this element
-         */
-        underbar(): IMathBar;
-
-        /**
-         * Takes the integral
-         */
-        integral(arg1: number, arg2: IMathElement, arg3: IMathElement, arg4: number): IMathNaryOperator;
-
-        /**
-         * Specifies the mathematical root of the given degree from the specified argument.
-         */
-        radical(arg1: IMathElement): IMathRadical;
-
-        /**
-         * Creates subscript and superscript on the left
-         */
-        setSubSuperscriptOnTheLeft(arg1: string, arg2: string): IMathLeftSubSuperscriptElement;
-
-        /**
-         * Places this element in a group using a grouping character such as bottom curly bracket or another
-         */
-        group(): IMathGroupingCharacter;
-
-        /**
-         * Takes a function of an argument using this instance as the function name
-         */
-        function(arg1: string): IMathFunction;
-
-        /**
-         * Creates a fraction of the specified type with this numerator and specified denominator
-         */
-        divide(arg1: string): IMathFraction;
-
-        /**
-         * Joins a mathematical text and forms a mathematical block
-         */
-        join(arg1: IMathElement): IMathBlock;
-
-        /**
-         * Takes upper limit
-         */
-        setUpperLimit(arg1: IMathElement): IMathLimit;
-
-        /**
-         * Creates a fraction of the specified type with this numerator and specified denominator
-         */
-        divide(arg1: IMathElement): IMathFraction;
-
-        /**
-         * Creates subscript and superscript on the left
-         */
-        setSubSuperscriptOnTheLeft(arg1: IMathElement, arg2: IMathElement): IMathLeftSubSuperscriptElement;
-
-        /**
-         * Creates a N-ary operator
-         */
-        nary(arg1: number, arg2: IMathElement, arg3: IMathElement): IMathNaryOperator;
-
-        /**
-         * Creates a fraction of the specified type with this numerator and specified denominator
-         */
-        divide(arg1: string, arg2: number): IMathFraction;
-
-        /**
-         * Encloses this element in specified characters such as parenthesis or another characters as framing
-         */
-        enclose(arg1: string, arg2: string): IMathDelimiter;
-
-        /**
-         * Creates superscript
-         */
-        setSuperscript(arg1: string): IMathSuperscriptElement;
-
-        /**
-         * Takes specified function using this instance as the argument and specified additional argument
-         */
-        asArgumentOfFunction(arg1: number, arg2: IMathElement): IMathFunction;
-
-        /**
-         * Takes specified function using this instance as the argument and specified additional argument
-         */
-        asArgumentOfFunction(arg1: number): IMathFunction;
-
-        /**
-         * Takes upper limit
-         */
-        setUpperLimit(arg1: string): IMathLimit;
-
-        /**
-         * Get children elements
-         */
-        getChildren(): IMathElement[];
-
-        /**
-         * Creates a N-ary operator
-         */
-        nary(arg1: number, arg2: string, arg3: string): IMathNaryOperator;
-
-        /**
-         * Takes specified function using this instance as the argument and specified additional argument
-         */
-        asArgumentOfFunction(arg1: number, arg2: string): IMathFunction;
-
-        /**
-         * Places this element in a border-box
-         */
-        toBorderBox(arg1: boolean, arg2: boolean, arg3: boolean, arg4: boolean, arg5: boolean, arg6: boolean, arg7: boolean, arg8: boolean): IMathBorderBox;
-
-        /**
-         * Takes the integral
-         */
-        integral(arg1: number, arg2: string, arg3: string, arg4: number): IMathNaryOperator;
 
         /**
          * Creates superscript
@@ -27679,9 +27489,29 @@ declare module "aspose.slides.via.java" {
         setSuperscript(arg1: IMathElement): IMathSuperscriptElement;
 
         /**
-         * Sets an accent mark (a character on the top of this element)
+         * Places this element in a border-box
          */
-        accent(arg1: string): IMathAccent;
+        toBorderBox(arg1: boolean, arg2: boolean, arg3: boolean, arg4: boolean, arg5: boolean, arg6: boolean, arg7: boolean, arg8: boolean): IMathBorderBox;
+
+        /**
+         * Creates a N-ary operator
+         */
+        nary(arg1: number, arg2: string, arg3: string): IMathNaryOperator;
+
+        /**
+         * Takes upper limit
+         */
+        setUpperLimit(arg1: string): IMathLimit;
+
+        /**
+         * Creates subscript and superscript on the left
+         */
+        setSubSuperscriptOnTheLeft(arg1: string, arg2: string): IMathLeftSubSuperscriptElement;
+
+        /**
+         * Takes specified function using this instance as the argument and specified additional argument
+         */
+        asArgumentOfFunction(arg1: number): IMathFunction;
 
         /**
          * Sets a bar on the top of this element
@@ -27689,14 +27519,79 @@ declare module "aspose.slides.via.java" {
         overbar(): IMathBar;
 
         /**
-         * Puts in a vertical array
+         * Takes the integral
          */
-        toMathArray(): IMathArray;
+        integral(arg1: number, arg2: string, arg3: string): IMathNaryOperator;
 
         /**
          * Creates a fraction of the specified type with this numerator and specified denominator
          */
-        divide(arg1: IMathElement, arg2: number): IMathFraction;
+        divide(arg1: string): IMathFraction;
+
+        /**
+         * Creates subscript and superscript on the left
+         */
+        setSubSuperscriptOnTheLeft(arg1: IMathElement, arg2: IMathElement): IMathLeftSubSuperscriptElement;
+
+        /**
+         * Creates superscript
+         */
+        setSuperscript(arg1: string): IMathSuperscriptElement;
+
+        /**
+         * Places this element in a non-visual box (logical grouping) which is used to group components of an equation or other instance of mathematical text. A boxed object can (for example) serve as an operator emulator with or without an alignment point, serve as a line break point, or be grouped such as not to allow line breaks within.
+         */
+        toBox(): IMathBox;
+
+        /**
+         * Takes specified function using this instance as the argument and specified additional argument
+         */
+        asArgumentOfFunction(arg1: IMathElement): IMathFunction;
+
+        /**
+         * Takes specified function using this instance as the argument and specified additional argument
+         */
+        asArgumentOfFunction(arg1: number, arg2: IMathElement): IMathFunction;
+
+        /**
+         * Places this element in a group using a grouping character such as bottom curly bracket or another
+         */
+        group(arg1: string, arg2: number, arg3: number): IMathGroupingCharacter;
+
+        /**
+         * Takes the integral
+         */
+        integral(arg1: number): IMathNaryOperator;
+
+        /**
+         * Takes upper limit
+         */
+        setUpperLimit(arg1: IMathElement): IMathLimit;
+
+        /**
+         * Specifies the mathematical root of the given degree from the specified argument.
+         */
+        radical(arg1: string): IMathRadical;
+
+        /**
+         * Places this element in a border-box
+         */
+        toBorderBox(): IMathBorderBox;
+
+        /**
+         * Takes specified function using this instance as the argument and specified additional argument
+         */
+        asArgumentOfFunction(arg1: string): IMathFunction;
+
+        /**
+         * Creates a fraction of the specified type with this numerator and specified denominator
+         */
+        divide(arg1: string, arg2: number): IMathFraction;
+
+        /**
+         * Creates a fraction of the specified type with this numerator and specified denominator
+         */
+        divide(arg1: IMathElement): IMathFraction;
 
         /**
          * Takes lower limit
@@ -27704,9 +27599,114 @@ declare module "aspose.slides.via.java" {
         setLowerLimit(arg1: IMathElement): IMathLimit;
 
         /**
+         * Creates a fraction of the specified type with this numerator and specified denominator
+         */
+        divide(arg1: IMathElement, arg2: number): IMathFraction;
+
+        /**
+         * Specifies the mathematical root of the given degree from the specified argument.
+         */
+        radical(arg1: IMathElement): IMathRadical;
+
+        /**
+         * Get children elements
+         */
+        getChildren(): IMathElement[];
+
+        /**
+         * Puts in a vertical array
+         */
+        toMathArray(): IMathArray;
+
+        /**
+         * Encloses this element in specified characters such as parenthesis or another characters as framing
+         */
+        enclose(arg1: string, arg2: string): IMathDelimiter;
+
+        /**
+         * Takes a function of an argument using this instance as the function name
+         */
+        function(arg1: string): IMathFunction;
+
+        /**
+         * Creates subscript and superscript on the right
+         */
+        setSubSuperscriptOnTheRight(arg1: string, arg2: string): IMathRightSubSuperscriptElement;
+
+        /**
+         * Joins a mathematical text and forms a mathematical block
+         */
+        join(arg1: IMathElement): IMathBlock;
+
+        /**
+         * Creates subscript
+         */
+        setSubscript(arg1: IMathElement): IMathSubscriptElement;
+
+        /**
+         * Takes specified function using this instance as the argument and specified additional argument
+         */
+        asArgumentOfFunction(arg1: number, arg2: string): IMathFunction;
+
+        /**
+         * Takes lower limit
+         */
+        setLowerLimit(arg1: string): IMathLimit;
+
+        /**
+         * Joins a mathematical text and forms a mathematical block
+         */
+        join(arg1: string): IMathBlock;
+
+        /**
+         * Takes the integral
+         */
+        integral(arg1: number, arg2: IMathElement, arg3: IMathElement, arg4: number): IMathNaryOperator;
+
+        /**
+         * Creates subscript
+         */
+        setSubscript(arg1: string): IMathSubscriptElement;
+
+        /**
+         * Sets an accent mark (a character on the top of this element)
+         */
+        accent(arg1: string): IMathAccent;
+
+        /**
+         * Creates subscript and superscript on the right
+         */
+        setSubSuperscriptOnTheRight(arg1: IMathElement, arg2: IMathElement): IMathRightSubSuperscriptElement;
+
+        /**
+         * Sets a bar on the bottom of this element
+         */
+        underbar(): IMathBar;
+
+        /**
+         * Places this element in a group using a grouping character such as bottom curly bracket or another
+         */
+        group(): IMathGroupingCharacter;
+
+        /**
          * Takes the integral
          */
         integral(arg1: number, arg2: IMathElement, arg3: IMathElement): IMathNaryOperator;
+
+        /**
+         * Encloses this element in specified characters such as parenthesis or another characters as framing
+         */
+        enclose(): IMathDelimiter;
+
+        /**
+         * Creates a N-ary operator
+         */
+        nary(arg1: number, arg2: IMathElement, arg3: IMathElement): IMathNaryOperator;
+
+        /**
+         * Takes the integral
+         */
+        integral(arg1: number, arg2: string, arg3: string, arg4: number): IMathNaryOperator;
 
     }
 
@@ -27760,14 +27760,14 @@ declare module "aspose.slides.via.java" {
         getActiveXControlBinary(): number[];
 
         /**
-         * Returns the presentation. Read-only IPresentation.
-         */
-        getPresentation(): IPresentation;
-
-        /**
          * Returns the base slide. Read-only IBaseSlide.
          */
         getSlide(): IBaseSlide;
+
+        /**
+         * Returns the presentation. Read-only IPresentation.
+         */
+        getPresentation(): IPresentation;
 
     }
 
@@ -27801,79 +27801,14 @@ declare module "aspose.slides.via.java" {
         getEffective(): IPortionFormatEffectiveData;
 
         /**
-         * Returns or sets the East Asian font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
-         */
-        getEastAsianFont(): IFontData;
-
-        /**
-         * Returns or sets the type of text capitalization. No inheritance applied. Read/write TextCapType.
-         */
-        getTextCapType(): number;
-
-        /**
-         * Returns the text FillFormat properties. No inheritance applied. Read-only IFillFormat.
-         */
-        getFillFormat(): IFillFormat;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
-         */
-        getHyperlinkClick(): IHyperlink;
-
-        /**
-         * Returns or sets the intercharacter spacing increment. Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
-         */
-        setSpacing(arg1: number): void;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
-         */
-        setHyperlinkMouseOver(arg1: IHyperlink): void;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
-         */
-        getHyperlinkMouseOver(): IHyperlink;
-
-        /**
-         * Returns or sets the intercharacter spacing increment. Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
-         */
-        getSpacing(): number;
-
-        /**
-         * Determines whether the numbers should ignore text eastern language-specific vertical text layout. No inheritance applied. Read/write NullableBool.
-         */
-        getKumimoji(): number;
-
-        /**
-         * Returns or sets the Id of a proofing language. Used for checking spelling and grammar. Read/write String.
-         */
-        setLanguageId(arg1: string): void;
-
-        /**
-         * Returns or sets the complex script font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
-         */
-        setComplexScriptFont(arg1: IFontData): void;
-
-        /**
-         * Returns or sets the Latin font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
-         */
-        getLatinFont(): IFontData;
-
-        /**
-         * Returns or sets the Id of a proofing language. Used for checking spelling and grammar. Read/write String.
-         */
-        getLanguageId(): string;
-
-        /**
          * Returns or sets the complex script font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
          */
         getComplexScriptFont(): IFontData;
 
         /**
-         * Returns or sets the symbolic font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         * Returns or sets the strikethrough type of a text. No inheritance applied. Read/write TextStrikethroughType.
          */
-        getSymbolFont(): IFontData;
+        getStrikethroughType(): number;
 
         /**
          * Returns the color used to highlight a text. No inheritance applied. Read-only IColorFormat.
@@ -27881,29 +27816,9 @@ declare module "aspose.slides.via.java" {
         getHighlightColor(): IColorFormat;
 
         /**
-         * Returns or sets the minimal font size, for which kerning should be switched on. Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
          */
-        setKerningMinimalSize(arg1: number): void;
-
-        /**
-         * Returns or sets the text underline type. No inheritance applied. Read/write TextUnderlineType.
-         */
-        setFontUnderline(arg1: number): void;
-
-        /**
-         * Returns or sets the Id of an alternative language. Read/write String.
-         */
-        getAlternativeLanguageId(): string;
-
-        /**
-         * Returns or sets the strikethrough type of a text. No inheritance applied. Read/write TextStrikethroughType.
-         */
-        setStrikethroughType(arg1: number): void;
-
-        /**
-         * Returns or sets the superscript or subscript text. Value from -100% (subscript) to 100% (superscript). Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
-         */
-        setEscapement(arg1: number): void;
+        getHyperlinkMouseOver(): IHyperlink;
 
         /**
          * Gets or sets a value indicating whether spell checking is enabled for the text portion. When this property is set to false, spelling checks for text elements are suppressed. When set to true, spell checking is allowed. Default value is false.
@@ -27911,74 +27826,14 @@ declare module "aspose.slides.via.java" {
         setSpellCheck(arg1: boolean): void;
 
         /**
-         * Determines whether the underline style has own LineFormat properties or inherits it from the LineFormat properties of the text. Read/write NullableBool.
-         */
-        isHardUnderlineLine(): number;
-
-        /**
-         * Returns or sets the text underline type. No inheritance applied. Read/write TextUnderlineType.
-         */
-        getFontUnderline(): number;
-
-        /**
-         * Returns or sets the minimal font size, for which kerning should be switched on. Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
-         */
-        getKerningMinimalSize(): number;
-
-        /**
-         * Returns or sets the type of text capitalization. No inheritance applied. Read/write TextCapType.
-         */
-        setTextCapType(arg1: number): void;
-
-        /**
-         * Returns the text EffectFormat properties. No inheritance applied. Read-only IEffectFormat.
-         */
-        getEffectFormat(): IEffectFormat;
-
-        /**
-         * Returns or sets the symbolic font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
-         */
-        setSymbolFont(arg1: IFontData): void;
-
-        /**
-         * Determines whether the font is itallic. No inheritance applied. Read/write NullableBool.
-         */
-        getFontItalic(): number;
-
-        /**
-         * Determines whether the underline style has own FillFormat properties or inherits it from the FillFormat properties of the text. Read/write NullableBool.
-         */
-        isHardUnderlineFill(): number;
-
-        /**
-         * Determines whether the font is itallic. No inheritance applied. Read/write NullableBool.
-         */
-        setFontItalic(arg1: number): void;
-
-        /**
          * Hyperlinks manager Read-only IHyperlinkManager.
          */
         getHyperlinkManager(): IHyperlinkManager;
 
         /**
-         * Returns the LineFormat properties for text outlining. No inheritance applied. Read-only ILineFormat.
+         * Gets or sets a value indicating whether spell checking is enabled for the text portion. When this property is set to false, spelling checks for text elements are suppressed. When set to true, spell checking is allowed. Default value is false.
          */
-        getLineFormat(): ILineFormat;
-
-        /**
-         * Returns or sets the Id of an alternative language. Read/write String.
-         */
-        setAlternativeLanguageId(arg1: string): void;
-
-        /**
-         * Returns or sets the East Asian font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
-         */
-        setEastAsianFont(arg1: IFontData): void;
-
-        /**
-         * Returns the underline line FillFormat properties. No inheritance applied. Read-only IFillFormat.
-         */
-        getUnderlineFillFormat(): IFillFormat;
+        getSpellCheck(): boolean;
 
         /**
          * Determines whether the height of a text should be normalized. No inheritance applied. Read/write NullableBool.
@@ -27986,19 +27841,94 @@ declare module "aspose.slides.via.java" {
         getNormaliseHeight(): number;
 
         /**
-         * Determines whether the text shouldn't be proofed. No inheritance applied. Read/write NullableBool.
+         * Returns or sets the Id of an alternative language. Read/write String.
          */
-        setProofDisabled(arg1: number): void;
+        setAlternativeLanguageId(arg1: string): void;
 
         /**
-         * Determines whether the numbers should ignore text eastern language-specific vertical text layout. No inheritance applied. Read/write NullableBool.
+         * Returns the LineFormat properties for text outlining. No inheritance applied. Read-only ILineFormat.
          */
-        setKumimoji(arg1: number): void;
+        getLineFormat(): ILineFormat;
 
         /**
-         * Determines whether the font is bold. No inheritance applied. Read/write NullableBool.
+         * Returns or sets the symbolic font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
          */
-        getFontBold(): number;
+        setSymbolFont(arg1: IFontData): void;
+
+        /**
+         * Returns or sets the East Asian font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         */
+        getEastAsianFont(): IFontData;
+
+        /**
+         * Returns or sets the Id of an alternative language. Read/write String.
+         */
+        getAlternativeLanguageId(): string;
+
+        /**
+         * Returns or sets the symbolic font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         */
+        getSymbolFont(): IFontData;
+
+        /**
+         * Returns or sets the superscript or subscript text. Value from -100% (subscript) to 100% (superscript). Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
+         */
+        getEscapement(): number;
+
+        /**
+         * Returns the underline line FillFormat properties. No inheritance applied. Read-only IFillFormat.
+         */
+        getUnderlineFillFormat(): IFillFormat;
+
+        /**
+         * Returns or sets the Id of a proofing language. Used for checking spelling and grammar. Read/write String.
+         */
+        setLanguageId(arg1: string): void;
+
+        /**
+         * Returns or sets the type of text capitalization. No inheritance applied. Read/write TextCapType.
+         */
+        setTextCapType(arg1: number): void;
+
+        /**
+         * Returns or sets the intercharacter spacing increment. Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
+         */
+        getSpacing(): number;
+
+        /**
+         * Determines whether the underline style has own LineFormat properties or inherits it from the LineFormat properties of the text. Read/write NullableBool.
+         */
+        setHardUnderlineLine(arg1: number): void;
+
+        /**
+         * Returns or sets the minimal font size, for which kerning should be switched on. Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
+         */
+        setKerningMinimalSize(arg1: number): void;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
+         */
+        setHyperlinkClick(arg1: IHyperlink): void;
+
+        /**
+         * Determines whether the underline style has own FillFormat properties or inherits it from the FillFormat properties of the text. Read/write NullableBool.
+         */
+        isHardUnderlineFill(): number;
+
+        /**
+         * Returns or sets the type of text capitalization. No inheritance applied. Read/write TextCapType.
+         */
+        getTextCapType(): number;
+
+        /**
+         * Returns or sets the Id of a proofing language. Used for checking spelling and grammar. Read/write String.
+         */
+        getLanguageId(): string;
+
+        /**
+         * Returns or sets the strikethrough type of a text. No inheritance applied. Read/write TextStrikethroughType.
+         */
+        setStrikethroughType(arg1: number): void;
 
         /**
          * Returns the LineFormat properties used to outline underline line. No inheritance applied. Read-only ILineFormat.
@@ -28008,52 +27938,12 @@ declare module "aspose.slides.via.java" {
         /**
          * Returns or sets the superscript or subscript text. Value from -100% (subscript) to 100% (superscript). Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
          */
-        getEscapement(): number;
+        setEscapement(arg1: number): void;
 
         /**
-         * Returns or sets the strikethrough type of a text. No inheritance applied. Read/write TextStrikethroughType.
+         * Determines whether the numbers should ignore text eastern language-specific vertical text layout. No inheritance applied. Read/write NullableBool.
          */
-        getStrikethroughType(): number;
-
-        /**
-         * Returns or sets the Latin font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
-         */
-        setLatinFont(arg1: IFontData): void;
-
-        /**
-         * Gets or sets a value indicating whether spell checking is enabled for the text portion. When this property is set to false, spelling checks for text elements are suppressed. When set to true, spell checking is allowed. Default value is false.
-         */
-        getSpellCheck(): boolean;
-
-        /**
-         * Returns or sets the font height of a portion. Float.NaN means height is undefined and should be inherited from the Master. Read/write float.
-         */
-        setFontHeight(arg1: number): void;
-
-        /**
-         * Determines whether the underline style has own LineFormat properties or inherits it from the LineFormat properties of the text. Read/write NullableBool.
-         */
-        setHardUnderlineLine(arg1: number): void;
-
-        /**
-         * Determines whether the underline style has own FillFormat properties or inherits it from the FillFormat properties of the text. Read/write NullableBool.
-         */
-        setHardUnderlineFill(arg1: number): void;
-
-        /**
-         * Determines whether the height of a text should be normalized. No inheritance applied. Read/write NullableBool.
-         */
-        setNormaliseHeight(arg1: number): void;
-
-        /**
-         * Determines whether the font is bold. No inheritance applied. Read/write NullableBool.
-         */
-        setFontBold(arg1: number): void;
-
-        /**
-         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
-         */
-        setHyperlinkClick(arg1: IHyperlink): void;
+        getKumimoji(): number;
 
         /**
          * Returns or sets the font height of a portion. Float.NaN means height is undefined and should be inherited from the Master. Read/write float.
@@ -28061,9 +27951,119 @@ declare module "aspose.slides.via.java" {
         getFontHeight(): number;
 
         /**
+         * Determines whether the numbers should ignore text eastern language-specific vertical text layout. No inheritance applied. Read/write NullableBool.
+         */
+        setKumimoji(arg1: number): void;
+
+        /**
+         * Returns the text EffectFormat properties. No inheritance applied. Read-only IEffectFormat.
+         */
+        getEffectFormat(): IEffectFormat;
+
+        /**
+         * Returns or sets the intercharacter spacing increment. Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
+         */
+        setSpacing(arg1: number): void;
+
+        /**
+         * Returns or sets the complex script font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         */
+        setComplexScriptFont(arg1: IFontData): void;
+
+        /**
+         * Determines whether the font is bold. No inheritance applied. Read/write NullableBool.
+         */
+        setFontBold(arg1: number): void;
+
+        /**
          * Determines whether the text shouldn't be proofed. No inheritance applied. Read/write NullableBool.
          */
         getProofDisabled(): number;
+
+        /**
+         * Returns or sets the text underline type. No inheritance applied. Read/write TextUnderlineType.
+         */
+        setFontUnderline(arg1: number): void;
+
+        /**
+         * Determines whether the height of a text should be normalized. No inheritance applied. Read/write NullableBool.
+         */
+        setNormaliseHeight(arg1: number): void;
+
+        /**
+         * Determines whether the font is itallic. No inheritance applied. Read/write NullableBool.
+         */
+        getFontItalic(): number;
+
+        /**
+         * Determines whether the font is bold. No inheritance applied. Read/write NullableBool.
+         */
+        getFontBold(): number;
+
+        /**
+         * Returns or sets the minimal font size, for which kerning should be switched on. Float.NaN means value is undefined and should be inherited from the Master. Read/write float.
+         */
+        getKerningMinimalSize(): number;
+
+        /**
+         * Determines whether the underline style has own LineFormat properties or inherits it from the LineFormat properties of the text. Read/write NullableBool.
+         */
+        isHardUnderlineLine(): number;
+
+        /**
+         * Returns or sets the East Asian font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         */
+        setEastAsianFont(arg1: IFontData): void;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse click. Read/write IHyperlink.
+         */
+        getHyperlinkClick(): IHyperlink;
+
+        /**
+         * Returns or sets the Latin font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         */
+        setLatinFont(arg1: IFontData): void;
+
+        /**
+         * Determines whether the underline style has own FillFormat properties or inherits it from the FillFormat properties of the text. Read/write NullableBool.
+         */
+        setHardUnderlineFill(arg1: number): void;
+
+        /**
+         * Returns or sets the font height of a portion. Float.NaN means height is undefined and should be inherited from the Master. Read/write float.
+         */
+        setFontHeight(arg1: number): void;
+
+        /**
+         * Returns the text FillFormat properties. No inheritance applied. Read-only IFillFormat.
+         */
+        getFillFormat(): IFillFormat;
+
+        /**
+         * Determines whether the text shouldn't be proofed. No inheritance applied. Read/write NullableBool.
+         */
+        setProofDisabled(arg1: number): void;
+
+        /**
+         * Determines whether the font is itallic. No inheritance applied. Read/write NullableBool.
+         */
+        setFontItalic(arg1: number): void;
+
+        /**
+         * Returns or sets the hyperlink defined for mouse over. Read/write IHyperlink.
+         */
+        setHyperlinkMouseOver(arg1: IHyperlink): void;
+
+        /**
+         * Returns or sets the Latin font info. Null means font is undefined and should be inherited from the Master. Read/write IFontData.
+         */
+        getLatinFont(): IFontData;
+
+        /**
+         * Returns or sets the text underline type. No inheritance applied. Read/write TextUnderlineType.
+         */
+        getFontUnderline(): number;
 
     }
 
@@ -28092,14 +28092,14 @@ declare module "aspose.slides.via.java" {
         setPattern(arg1: number): void;
 
         /**
-         * Serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.
-         */
-        hashCode(): number;
-
-        /**
          * Determines whether the two TransitionValueBase instances are equal.
          */
         equals(arg1: java.lang.Object): boolean;
+
+        /**
+         * Serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.
+         */
+        hashCode(): number;
 
     }
 
@@ -28192,6 +28192,21 @@ declare module "aspose.slides.via.java" {
         clear(): void;
 
         /**
+         * Returns the color scheme. Read-only IColorScheme.
+         */
+        getColorScheme(): IColorScheme;
+
+        /**
+         * Returns the presentation. Read-only IPresentation.
+         */
+        getPresentation(): IPresentation;
+
+        /**
+         * Gets effective theme data with the inheritance applied.
+         */
+        getEffective(): IThemeEffectiveData;
+
+        /**
          * Returns the shape format scheme. Read-only IFormatScheme.
          */
         getFormatScheme(): IFormatScheme;
@@ -28200,21 +28215,6 @@ declare module "aspose.slides.via.java" {
          * Returns the font scheme. Read-only IFontScheme.
          */
         getFontScheme(): IFontScheme;
-
-        /**
-         * Returns the color scheme. Read-only IColorScheme.
-         */
-        getColorScheme(): IColorScheme;
-
-        /**
-         * Gets effective theme data with the inheritance applied.
-         */
-        getEffective(): IThemeEffectiveData;
-
-        /**
-         * Returns the presentation. Read-only IPresentation.
-         */
-        getPresentation(): IPresentation;
 
     }
 
@@ -28228,11 +28228,6 @@ declare module "aspose.slides.via.java" {
         getThemeManager(): IMasterThemeManager;
 
         /**
-         * Returns the base slide. Read-only IBaseSlide.
-         */
-        getSlide(): IBaseSlide;
-
-        /**
          * Returns an effective theme for this themeable object.
          */
         createThemeEffective(): IThemeEffectiveData;
@@ -28241,6 +28236,11 @@ declare module "aspose.slides.via.java" {
          * Returns the presentation. Read-only IPresentation.
          */
         getPresentation(): IPresentation;
+
+        /**
+         * Returns the base slide. Read-only IBaseSlide.
+         */
+        getSlide(): IBaseSlide;
 
     }
 
@@ -28450,29 +28450,39 @@ declare module "aspose.slides.via.java" {
         getBase(): IMathElement;
 
         /**
-         * Takes the integral
+         * Sets a bar on the top of this element
          */
-        integral(arg1: number, arg2: string, arg3: string): IMathNaryOperator;
-
-        /**
-         * Joins a mathematical text and forms a mathematical block
-         */
-        join(arg1: IMathElement): IMathBlock;
-
-        /**
-         * Creates a N-ary operator
-         */
-        nary(arg1: number, arg2: string, arg3: string): IMathNaryOperator;
-
-        /**
-         * Encloses a math element in specified characters such as parenthesis or another characters as framing
-         */
-        enclose(arg1: string, arg2: string): IMathDelimiter;
+        overbar(): IMathBar;
 
         /**
          * Creates a fraction of the specified type with this numerator and specified denominator
          */
-        divide(arg1: IMathElement, arg2: number): IMathFraction;
+        divide(arg1: IMathElement): IMathFraction;
+
+        /**
+         * Takes the integral
+         */
+        integral(arg1: number, arg2: IMathElement, arg3: IMathElement, arg4: number): IMathNaryOperator;
+
+        /**
+         * Takes a function of an argument using this instance as the function name
+         */
+        function(arg1: string): IMathFunction;
+
+        /**
+         * Encloses a math element in specified characters such as parenthesis or another characters as framing
+         */
+        enclose(): IMathDelimiter;
+
+        /**
+         * Specifies the mathematical root of the given degree from the specified argument.
+         */
+        radical(arg1: IMathElement): IMathRadical;
+
+        /**
+         * Takes the integral
+         */
+        integral(arg1: number, arg2: string, arg3: string): IMathNaryOperator;
 
         /**
          * Creates subscript and superscript on the left
@@ -28482,12 +28492,67 @@ declare module "aspose.slides.via.java" {
         /**
          * Takes the integral
          */
+        integral(arg1: number, arg2: string, arg3: string, arg4: number): IMathNaryOperator;
+
+        /**
+         * Get children elements
+         */
+        getChildren(): IMathElement[];
+
+        /**
+         * Takes lower limit
+         */
+        setLowerLimit(arg1: IMathElement): IMathLimit;
+
+        /**
+         * Takes the integral
+         */
         integral(arg1: number): IMathNaryOperator;
+
+        /**
+         * Creates a fraction of the specified type with this numerator and specified denominator
+         */
+        divide(arg1: string): IMathFraction;
+
+        /**
+         * Takes specified function using this instance as the argument and specified additional argument
+         */
+        asArgumentOfFunction(arg1: IMathElement): IMathFunction;
+
+        /**
+         * Takes specified function using this instance as the argument and specified additional argument
+         */
+        asArgumentOfFunction(arg1: number, arg2: string): IMathFunction;
+
+        /**
+         * Joins a mathematical text and forms a mathematical block
+         */
+        join(arg1: string): IMathBlock;
 
         /**
          * Creates subscript and superscript on the right
          */
-        setSubSuperscriptOnTheRight(arg1: IMathElement, arg2: IMathElement): IMathRightSubSuperscriptElement;
+        setSubSuperscriptOnTheRight(arg1: string, arg2: string): IMathRightSubSuperscriptElement;
+
+        /**
+         * Takes specified function using this instance as the argument and specified additional argument
+         */
+        asArgumentOfFunction(arg1: string): IMathFunction;
+
+        /**
+         * Creates a fraction of the specified type with this numerator and specified denominator
+         */
+        divide(arg1: string, arg2: number): IMathFraction;
+
+        /**
+         * Creates subscript and superscript on the left
+         */
+        setSubSuperscriptOnTheLeft(arg1: string, arg2: string): IMathLeftSubSuperscriptElement;
+
+        /**
+         * Places this element in a group using a grouping character such as bottom curly bracket or another
+         */
+        group(): IMathGroupingCharacter;
 
         /**
          * Places this element in a non-visual box (logical grouping) which is used to group components of an equation or other instance of mathematical text. A boxed object can (for example) serve as an operator emulator with or without an alignment point, serve as a line break point, or be grouped such as not to allow line breaks within.
@@ -28495,9 +28560,74 @@ declare module "aspose.slides.via.java" {
         toBox(): IMathBox;
 
         /**
-         * Takes the integral
+         * Encloses a math element in specified characters such as parenthesis or another characters as framing
          */
-        integral(arg1: number, arg2: IMathElement, arg3: IMathElement): IMathNaryOperator;
+        enclose(arg1: string, arg2: string): IMathDelimiter;
+
+        /**
+         * Puts in a vertical array
+         */
+        toMathArray(): IMathArray;
+
+        /**
+         * Sets a bar on the bottom of this element
+         */
+        underbar(): IMathBar;
+
+        /**
+         * Places this element in a group using a grouping character such as bottom curly bracket or another
+         */
+        group(arg1: string, arg2: number, arg3: number): IMathGroupingCharacter;
+
+        /**
+         * Takes a function of an argument using this instance as the function name
+         */
+        function(arg1: IMathElement): IMathFunction;
+
+        /**
+         * Places this element in a border-box
+         */
+        toBorderBox(): IMathBorderBox;
+
+        /**
+         * Creates superscript
+         */
+        setSuperscript(arg1: string): IMathSuperscriptElement;
+
+        /**
+         * Takes specified function using this instance as the argument and specified additional argument
+         */
+        asArgumentOfFunction(arg1: number): IMathFunction;
+
+        /**
+         * Creates subscript and superscript on the right
+         */
+        setSubSuperscriptOnTheRight(arg1: IMathElement, arg2: IMathElement): IMathRightSubSuperscriptElement;
+
+        /**
+         * Takes lower limit
+         */
+        setLowerLimit(arg1: string): IMathLimit;
+
+        /**
+         * Takes specified function using this instance as the argument and specified additional argument
+         */
+        asArgumentOfFunction(arg1: number, arg2: IMathElement): IMathFunction;
+
+        /**
+         * Takes upper limit
+         */
+        setUpperLimit(arg1: string): IMathLimit;
+
+        /**
+         * Creates a fraction of the specified type with this numerator and specified denominator
+         */
+        divide(arg1: IMathElement, arg2: number): IMathFraction;
+
+        /**
+         * Creates subscript
+         */
+        setSubscript(arg1: IMathElement): IMathSubscriptElement;
 
         /**
          * Places this element in a border-box
@@ -28510,64 +28640,19 @@ declare module "aspose.slides.via.java" {
         setUpperLimit(arg1: IMathElement): IMathLimit;
 
         /**
-         * Takes the integral
-         */
-        integral(arg1: number, arg2: IMathElement, arg3: IMathElement, arg4: number): IMathNaryOperator;
-
-        /**
-         * Get children elements
-         */
-        getChildren(): IMathElement[];
-
-        /**
          * Joins a mathematical text and forms a mathematical block
          */
-        join(arg1: string): IMathBlock;
+        join(arg1: IMathElement): IMathBlock;
 
         /**
-         * Takes a function of an argument using this instance as the function name
+         * Creates subscript
          */
-        function(arg1: IMathElement): IMathFunction;
-
-        /**
-         * Takes specified function using this instance as the argument and specified additional argument
-         */
-        asArgumentOfFunction(arg1: number): IMathFunction;
+        setSubscript(arg1: string): IMathSubscriptElement;
 
         /**
          * Creates superscript
          */
-        setSuperscript(arg1: string): IMathSuperscriptElement;
-
-        /**
-         * Takes a function of an argument using this instance as the function name
-         */
-        function(arg1: string): IMathFunction;
-
-        /**
-         * Creates a fraction of the specified type with this numerator and specified denominator
-         */
-        divide(arg1: string): IMathFraction;
-
-        /**
-         * Creates subscript and superscript on the right
-         */
-        setSubSuperscriptOnTheRight(arg1: string, arg2: string): IMathRightSubSuperscriptElement;
-
-        /**
-         * Sets a bar on the top of this element
-         */
-        overbar(): IMathBar;
-
-        /**
-         * Places this element in a border-box
-         */
-        toBorderBox(): IMathBorderBox;
-
-        /**
-         * Creates a fraction of the specified type with this numerator and specified denominator
-         */
-        divide(arg1: string, arg2: number): IMathFraction;
+        setSuperscript(arg1: IMathElement): IMathSuperscriptElement;
 
         /**
          * Creates a N-ary operator
@@ -28580,44 +28665,9 @@ declare module "aspose.slides.via.java" {
         accent(arg1: string): IMathAccent;
 
         /**
-         * Sets a bar on the bottom of this element
+         * Takes the integral
          */
-        underbar(): IMathBar;
-
-        /**
-         * Encloses a math element in specified characters such as parenthesis or another characters as framing
-         */
-        enclose(): IMathDelimiter;
-
-        /**
-         * Places this element in a group using a grouping character such as bottom curly bracket or another
-         */
-        group(): IMathGroupingCharacter;
-
-        /**
-         * Creates subscript
-         */
-        setSubscript(arg1: string): IMathSubscriptElement;
-
-        /**
-         * Takes specified function using this instance as the argument and specified additional argument
-         */
-        asArgumentOfFunction(arg1: IMathElement): IMathFunction;
-
-        /**
-         * Creates superscript
-         */
-        setSuperscript(arg1: IMathElement): IMathSuperscriptElement;
-
-        /**
-         * Takes upper limit
-         */
-        setUpperLimit(arg1: string): IMathLimit;
-
-        /**
-         * Takes specified function using this instance as the argument and specified additional argument
-         */
-        asArgumentOfFunction(arg1: string): IMathFunction;
+        integral(arg1: number, arg2: IMathElement, arg3: IMathElement): IMathNaryOperator;
 
         /**
          * Specifies the mathematical root of the given degree from the specified argument.
@@ -28625,59 +28675,9 @@ declare module "aspose.slides.via.java" {
         radical(arg1: string): IMathRadical;
 
         /**
-         * Creates a fraction of the specified type with this numerator and specified denominator
+         * Creates a N-ary operator
          */
-        divide(arg1: IMathElement): IMathFraction;
-
-        /**
-         * Takes specified function using this instance as the argument and specified additional argument
-         */
-        asArgumentOfFunction(arg1: number, arg2: IMathElement): IMathFunction;
-
-        /**
-         * Places this element in a group using a grouping character such as bottom curly bracket or another
-         */
-        group(arg1: string, arg2: number, arg3: number): IMathGroupingCharacter;
-
-        /**
-         * Specifies the mathematical root of the given degree from the specified argument.
-         */
-        radical(arg1: IMathElement): IMathRadical;
-
-        /**
-         * Takes specified function using this instance as the argument and specified additional argument
-         */
-        asArgumentOfFunction(arg1: number, arg2: string): IMathFunction;
-
-        /**
-         * Creates subscript
-         */
-        setSubscript(arg1: IMathElement): IMathSubscriptElement;
-
-        /**
-         * Takes lower limit
-         */
-        setLowerLimit(arg1: IMathElement): IMathLimit;
-
-        /**
-         * Takes the integral
-         */
-        integral(arg1: number, arg2: string, arg3: string, arg4: number): IMathNaryOperator;
-
-        /**
-         * Puts in a vertical array
-         */
-        toMathArray(): IMathArray;
-
-        /**
-         * Creates subscript and superscript on the left
-         */
-        setSubSuperscriptOnTheLeft(arg1: string, arg2: string): IMathLeftSubSuperscriptElement;
-
-        /**
-         * Takes lower limit
-         */
-        setLowerLimit(arg1: string): IMathLimit;
+        nary(arg1: number, arg2: string, arg3: string): IMathNaryOperator;
 
     }
 
@@ -51510,27 +51510,27 @@ declare module "aspose.slides.via.java" {
         /**
          * Creates a new instance of XmlException.
          */
-        constructor(arg1: string, arg2: string, arg3: j9);
+        constructor(arg1: string, arg2: string, arg3: a3);
 
         /**
          * Creates a new instance of XmlException.
          */
-        constructor(arg1: string, arg2: string, arg3: java.lang.RuntimeException, arg4: j9);
+        constructor(arg1: string, arg2: string, arg3: java.lang.RuntimeException, arg4: a3);
 
         /**
          * Creates a new instance of XmlException.
          */
-        constructor(arg1: string, arg2: string, arg3: j9, arg4: string);
+        constructor(arg1: string, arg2: string, arg3: a3, arg4: string);
 
         /**
          * Creates a new instance of XmlException.
          */
-        constructor(arg1: string, arg2: string[], arg3: j9);
+        constructor(arg1: string, arg2: string[], arg3: a3);
 
         /**
          * Creates a new instance of XmlException.
          */
-        constructor(arg1: string, arg2: string[], arg3: j9, arg4: string);
+        constructor(arg1: string, arg2: string[], arg3: a3, arg4: string);
 
         /**
          * Creates a new instance of XmlException.
@@ -65108,7 +65108,7 @@ declare module "aspose.slides.via.java" {
         /**
          * Creates a new instance of InvalidPrinterException.
          */
-        constructor(arg1: w3);
+        constructor(arg1: r3);
 
         /**
          * Creates a new instance of InvalidPrinterException.
@@ -66415,22 +66415,22 @@ declare module "aspose.slides.via.java" {
         /**
          * Creates a new instance of XmlSchemaException.
          */
-        constructor(arg1: string, arg2: r8);
+        constructor(arg1: string, arg2: j1);
 
         /**
          * Creates a new instance of XmlSchemaException.
          */
-        constructor(arg1: string, arg2: string, arg3: r8);
+        constructor(arg1: string, arg2: string, arg3: j1);
 
         /**
          * Creates a new instance of XmlSchemaException.
          */
-        constructor(arg1: string, arg2: string[], arg3: r8);
+        constructor(arg1: string, arg2: string[], arg3: j1);
 
         /**
          * Creates a new instance of XmlSchemaException.
          */
-        constructor(arg1: string, arg2: string[], arg3: java.lang.RuntimeException, arg4: string, arg5: number, arg6: number, arg7: r8);
+        constructor(arg1: string, arg2: string[], arg3: java.lang.RuntimeException, arg4: string, arg5: number, arg6: number, arg7: j1);
 
         /**
          * @param arg1 string
@@ -69517,7 +69517,7 @@ declare module "aspose.slides.via.java" {
         /**
          * Creates a new instance of InvalidEnumArgumentException.
          */
-        constructor(arg1: string, arg2: number, arg3: l7);
+        constructor(arg1: string, arg2: number, arg3: s9);
 
         /**
          * @returns string
@@ -91809,7 +91809,7 @@ declare module "aspose.slides.via.java" {
         /**
          * Creates a new instance of XmlSchemaValidationException.
          */
-        constructor(arg1: string, arg2: string[], arg3: string, arg4: number, arg5: number, arg6: r8, arg7: java.lang.Object);
+        constructor(arg1: string, arg2: string[], arg3: string, arg4: number, arg5: number, arg6: j1, arg7: java.lang.Object);
 
         /**
          * @returns java.lang.Object
@@ -91838,7 +91838,7 @@ declare module "aspose.slides.via.java" {
         /**
          * Creates a new instance of XmlSchemaException.
          */
-        constructor(arg1: string, arg2: string, arg3: r8);
+        constructor(arg1: string, arg2: string, arg3: j1);
 
         /**
          * @returns string[]
@@ -91864,7 +91864,7 @@ declare module "aspose.slides.via.java" {
         /**
          * Creates a new instance of XmlSchemaException.
          */
-        constructor(arg1: string, arg2: string[], arg3: r8);
+        constructor(arg1: string, arg2: string[], arg3: j1);
 
         /**
          * @param arg1 string
@@ -91881,7 +91881,7 @@ declare module "aspose.slides.via.java" {
         /**
          * Creates a new instance of XmlSchemaException.
          */
-        constructor(arg1: string, arg2: r8);
+        constructor(arg1: string, arg2: j1);
 
         /**
          * @returns string
@@ -91891,7 +91891,7 @@ declare module "aspose.slides.via.java" {
         /**
          * Creates a new instance of XmlSchemaException.
          */
-        constructor(arg1: string, arg2: string[], arg3: java.lang.RuntimeException, arg4: string, arg5: number, arg6: number, arg7: r8);
+        constructor(arg1: string, arg2: string[], arg3: java.lang.RuntimeException, arg4: string, arg5: number, arg6: number, arg7: j1);
 
     }
 
